@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BuySuccessMessageSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171fe1e1683" ></w:Config>
+	<e:Rect width="100%" height="100%" x="0" y="0" strokeAlpha="1" fillAlpha="0.6" fillColor="0x2B2727" alpha="1" scaleX="1"/>
+	<e:Group width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="messagebox" width="586" height="537" alpha="1" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" anchorOffsetX="293" anchorOffsetY="268.5">
+			<e:Rect id="bg" width="100%" height="100%" x="0" y="0" fillColor="0xFFFFFF"/>
+			<e:Image id="icon" width="243" height="157" top="-78.5" horizontalCenter="0" source="buy_top_png"/>
+			<e:Label text="购买成功" x="212" y="135" fontFamily="ZhenyanGB" textColor="0x454f5b" size="44" border="false" stroke="1" strokeColor="0x454f5b"/>
+			<e:Label id="amount" text="" top="229" textColor="0x454f5b" fontFamily="Arial-Black" size="44" horizontalCenter="0" bold="true"/>
+			<e:Label id="remark" text="" fontFamily="PingFangSC-Medium" textColor="0x1D292B" horizontalCenter="0" bottom="192"/>
+			<e:Label id="gift_info" text="" fontFamily="PingFangSC-Medium" textColor="0x1D292B" horizontalCenter="0" x="128" scaleX="1" scaleY="1" bottom="180" width="400"/>
+			<e:Group id="bottom_btns" width="482" height="70" horizontalCenter="0" bottom="49">
+			<e:Group id="close_btn" width="100%" height="70" scaleX="1" scaleY="1" bottom="0" left="0">
+				<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0x23BFD5" strokeColor="0x23BFD5" ellipseWidth="100" ellipseHeight="100"/>
+				<e:Label text="好的" verticalCenter="0" horizontalCenter="0"/>
+			</e:Group>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoginInMessageBoxSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171d8f700b6" ></w:Config>
+	<e:Rect width="100%" height="100%" x="0" y="0" strokeAlpha="1" fillAlpha="0.6" fillColor="0x2b2727"/>
+	<e:Group width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="messagebox" width="586" height="526" alpha="1" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" anchorOffsetX="293" anchorOffsetY="263">
+			<e:Rect id="bg" width="100%" height="100%" x="0" y="0" fillColor="0xffffff"/>
+			<e:Image width="431" height="288" source="login_png" y="-187" horizontalCenter="0"/>
+			<e:Image width="200" height="200" horizontalCenter="0" y="106" source="reward_png"/>
+			<e:Label id="credit" text="" y="321" textColor="0x454f5b" size="36" horizontalCenter="0" bold="true"/>
+			<e:Group id="close_btn" width="382" height="70" scaleX="1" scaleY="1" horizontalCenter="0" y="402">
+			<e:Image width="100%" height="100%" left="0" top="0" source="btn_bg5_png"/>
+			<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0x23bfd5" strokeColor="0x23bfd5" ellipseWidth="100" ellipseHeight="100" visible="false"/>
+			<e:Label text="收下了" verticalCenter="0" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

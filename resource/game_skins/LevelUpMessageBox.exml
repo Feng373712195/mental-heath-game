@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LevelUpMessageBoxSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171da0669ea" ></w:Config>
+	<e:Rect width="100%" height="100%" x="0" y="0" strokeAlpha="1" fillAlpha="0.6" fillColor="0x2B2727"/>
+	<e:Group width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="messagebox" width="586" height="526" alpha="1" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" anchorOffsetX="293" anchorOffsetY="263">
+			<e:Rect id="bg" width="100%" height="100%" x="0" y="0" fillColor="0xFFFFFF"/>
+			<e:Image width="296" height="212" y="-89" source="levelup_png" horizontalCenter="0"/>
+			<e:Label text="恭喜您 升级啦" y="141" textColor="0x454f5b" fontFamily="ZhenyanGB-Regular" size="44" bold="true" strokeColor="0x454f5b" horizontalCenter="0"/>
+			<e:Group id="levelup_detail" width="384" height="132" x="106" y="232" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Group id="leveup_before" width="40%" height="100%" top="0" left="0">
+				<e:Group id="levelup_before_text" width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0">
+				<e:Label id="before_level" text="" textColor="0x1d292b" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-20" size="30"/>
+				<e:Label text="" textColor="0x1d292b" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="20" size="30"/>
+				</e:Group>
+			</e:Group>
+			<e:Rect width="20" height="20" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			<e:Group id="levelup_aflter" width="40%" height="100%" scaleX="1" scaleY="1" right="0" top="0">
+				<e:Group id="levelup_before_text0" width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" x="-230" y="0">
+				<e:Label id="after_level" text="" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-20" size="30" textColor="0x23bfd5"/>
+				<e:Label text="" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="20" size="30" textColor="0x23bfd5"/>
+				</e:Group>
+			</e:Group>
+			<e:Image width="37" height="30" y="31" source="arrow_png" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group id="close_btn" width="382" height="70" scaleX="1" scaleY="1" horizontalCenter="0" y="402">
+			<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0x23BFD5" strokeColor="0x23BFD5" ellipseWidth="100" ellipseHeight="100"/>
+			<e:Label text="再接再厉" verticalCenter="0" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

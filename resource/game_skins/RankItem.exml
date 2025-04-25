@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankItemSkin" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  width="500">
+	<w:Config id="171b0954173" ></w:Config>
+	<e:Group id="item_group" height="100%" horizontalCenter="0" verticalCenter="0" right="30" left="30">
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+		<e:Group width="50%" height="100%" top="0" y="0" scaleX="1" scaleY="1" left="0">
+			<e:Group x="-3" y="29">
+				<e:Label id="rank_num" verticalCenter="0" y="37" scaleX="1" scaleY="1" textAlign="left" anchorOffsetX="0" left="20" x="220" textColor="0xcbcbcb" fontFamily="Arial-Black" size="26" text="01" alpha="0"/>
+				<e:Image id="rank1" width="38" height="44" y="1" source="rank1_png" right="0" alpha="0"/>
+				<e:Image id="rank2" width="38" height="44" y="0" scaleX="1" scaleY="1" right="0" source="rank2_png" alpha="0"/>
+				<e:Image id="rank3" width="38" height="44" y="0" scaleX="1" scaleY="1" right="0" source="rank3_png" alpha="0"/>
+				<e:layout>
+					<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+			<e:Group id="avatar" width="66" height="66" x="34" y="32">
+			<e:Rect width="100%" height="100%" left="-1" top="0" ellipseHeight="66" ellipseWidth="66" fillColor="0x23bfd5"/>
+			<e:Rect id="avatar_mask" width="90%" height="90%" fillColor="0xFFFFFF" ellipseWidth="66" ellipseHeight="66" verticalCenter="0.5" horizontalCenter="-0.5"/>
+				<e:Image id="user_avatar" width="90%" height="90%" horizontalCenter="-0.5" verticalCenter="0.5" mask="{avatar_mask}" source=""/>
+			</e:Group>
+			<e:Label id="user_name" verticalCenter="0" left="100" text="{ data.nickname }" textColor="0x1d292b" x="90" y="43" scaleX="1" scaleY="1"/>
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" gap="20"/>
+			</e:layout>
+		</e:Group>
+		<e:Group width="50%" height="100%" top="0" y="0" scaleX="1" scaleY="1" right="0">
+			<e:Label id="rank" verticalCenter="0" y="35" scaleX="1" scaleY="1" textAlign="right" anchorOffsetX="0" right="20" text="小白" textColor="0x1d292b" x="170"/>
+			<e:Label id="credit" verticalCenter="0" y="35" scaleX="1" scaleY="1" textAlign="right" anchorOffsetX="0" text="{  data.credit + '积分' }" right="20" x="103" textColor="0x1d292b"/>
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="right" verticalAlign="middle" gap="15"/>
+			</e:layout>
+		</e:Group>
+		<e:Rect width="100%" height="1" left="0" bottom="0" fillColor="0xcfcfcf" x="0" y="99" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

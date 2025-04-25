@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PkWaitMessageBoxSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171e2facb97" ></w:Config>
+	<e:Rect width="100%" height="100%" x="0" y="0" strokeAlpha="1" fillAlpha="0.6" fillColor="0x2B2727"/>
+	<e:Group width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="messagebox" width="666" height="672" alpha="1" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" anchorOffsetX="333" anchorOffsetY="336">
+			<e:Rect id="bg" width="100%" height="100%" x="0" y="0" fillColor="0xFFFFFF" ellipseWidth="40" ellipseHeight="40"/>
+			<e:Group id="gamer1" width="160" height="210" x="73" y="157">
+			<e:Group width="166" height="166" x="-74" y="583" scaleX="1" scaleY="1">
+				<e:Rect id="user_avatar_board" width="166" height="166" scaleX="1" scaleY="1" fillColor="0xFF0000" ellipseWidth="20" ellipseHeight="20" horizontalCenter="0" verticalCenter="0"/>
+				<e:Rect id="user_avatar_mask" width="160" height="160" scaleX="1" scaleY="1" fillColor="0xFF0000" ellipseWidth="20" ellipseHeight="20" horizontalCenter="0" verticalCenter="0" x="0" y="181"/>
+				<e:Image id="user_avatar" width="160" height="160" source="who_png" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" mask="{user_avatar_mask}"/>
+			</e:Group>
+			<e:Label id="user_name" text="" x="-158" y="-124" scaleX="1" scaleY="1" textColor="0x1d292b"/>
+			<e:layout>
+				<e:VerticalLayout gap="15" horizontalAlign="center" verticalAlign="top"/>
+			</e:layout>
+			</e:Group>
+			<e:Image width="180.79" height="93" source="vs_png" y="200" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+			<e:Group id="gamer2" width="160" height="210" x="433" y="157">
+			<e:Group width="166" height="166" x="-507" y="426" scaleX="1" scaleY="1">
+				<e:Rect id="rival_avatar_board" width="166" height="166" scaleX="1" scaleY="1" fillColor="0xFF0000" ellipseWidth="20" ellipseHeight="20" horizontalCenter="0" verticalCenter="0"/>
+				<e:Rect id="rival_avatar_mask" width="160" height="160" scaleX="1" scaleY="1" fillColor="0xFF0000" ellipseWidth="20" ellipseHeight="20" horizontalCenter="0" verticalCenter="0" x="0" y="181"/>
+				<e:Image id="rival_avatar" width="160" height="160" source="who_png" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" mask="{rival_avatar_mask}"/>
+			</e:Group>
+			<e:Label id="rival_name" text="" x="-158" y="-124" scaleX="1" scaleY="1" textColor="0x1D292B"/>
+			<e:layout>
+				<e:VerticalLayout gap="15" horizontalAlign="center" verticalAlign="top"/>
+			</e:layout>
+			</e:Group>
+			<e:Group id="ready_mask" width="168" height="168" x="433" y="157" scaleX="1" scaleY="1">
+			<e:Rect width="100%" height="100%" top="0" left="0" fillAlpha="0.5" ellipseWidth="20" ellipseHeight="20"/>
+			<e:Label text="未就绪" fontFamily="PingFangSC-Regular" textAlign="center" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Image width="338" height="81" y="20" source="match_top_png" horizontalCenter="0"/>
+			<e:Group id="match_tip" width="200" height="96" anchorOffsetY="0" horizontalCenter="0" verticalCenter="120">
+			<e:Label text="一大波儿对手正在赶来..." fontFamily="PingFangSC-Regular" textColor="0x1d292b" scaleX="1" scaleY="1" top="0" horizontalCenter="0" name="tip"/>
+			<e:Group width="200" height="30" y="61" left="0">
+				<e:Label id="wait_time_tip" text="已等待中：" textColor="0x23bfd5" fontFamily="PingFangSC-Medium" scaleX="1" scaleY="1" bottom="0" horizontalCenter="0" x="14" y="5"/>
+				<e:Label id="wait_time_text" text="0秒" textColor="0x23BFD5" fontFamily="PingFangSC-Medium" scaleX="1" scaleY="1" bottom="0" horizontalCenter="0" x="14" y="5"/>
+				<e:layout>
+				<e:HorizontalLayout gap="0" horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+			</e:Group>
+			<e:Group id="join_tip" width="200" height="96" verticalCenter="120" horizontalCenter="0" anchorOffsetY="0" visible="false">
+			<e:Label text="一大波儿对手正在赶来..." fontFamily="PingFangSC-Regular" textColor="0x1D292B" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" name="tip"/>
+			</e:Group>
+			<e:Group id="close_btn" width="382" height="70" scaleX="1" scaleY="1" horizontalCenter="0" bottom="71">
+			<e:Image width="100%" height="100%" left="0" top="0" source="btn_bg5_png" name="bg"/>
+			<e:Label text="取消" horizontalCenter="0" verticalCenter="0" name="text"/>
+			</e:Group>
+			<e:Group id="game_btn" width="382" height="70" scaleX="1" scaleY="1" horizontalCenter="0" bottom="71">
+			<e:Image width="100%" height="100%" left="0" top="0" source="btn_bg5_png" name="bg"/>
+			<e:Label text="开始游戏" horizontalCenter="0" verticalCenter="0" name="text"/>
+			</e:Group>
+		</e:Group>
+		<e:Label id="share_tip" text="点击“...”转发给好友" size="60" horizontalCenter="0" anchorOffsetY="0" verticalCenter="-205" height="470"/>
+	</e:Group>
+	<e:Image id="share_guide" width="300" height="130" y="20" source="share_png" x="410"/>
+</e:Skin>

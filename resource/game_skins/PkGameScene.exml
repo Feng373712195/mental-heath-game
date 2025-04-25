@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PkGameSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="17203f5d335" ></w:Config>
+	<e:Rect width="100%" height="100%" left="-2" top="0" fillColor="0xF0FDFF"/>
+	<e:Group id="game_window" width="659" height="1300" x="46" bottom="0" top="34">
+		<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="1" fillColor="0xF0FDFF" top="0"/>
+		<e:Group width="100%" height="100%" x="0" top="0" bottom="0">
+			<e:Group id="gamer_top" width="560" height="100" y="0" scaleX="1" scaleY="1" horizontalCenter="0" x="66">
+				<e:Group id="self" width="280" height="100%" left="0" top="0" name="avater">
+					<e:Group width="100" height="100" x="12" y="26">
+						<e:Rect id="user_avatar_border" width="100" height="100" fillColor="0x32F72C" name="avater_bg" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="20" ellipseHeight="20"/>
+						<e:Rect id="user_avatar_mask" width="100" height="100" fillColor="0x32F72C"  scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="20" ellipseHeight="20" x="100" y="0"/>
+						<e:Image id="user_avatar" scaleX="1" scaleY="1" width="95" source="who_png" height="95" verticalCenter="0" horizontalCenter="0" name="avater_img" mask="{user_avatar_mask}"/>
+					</e:Group>
+				<e:Group width="181" height="40" y="24" right="0" scrollEnabled="true">
+					<e:Rect width="100%" height="100%" top="0" right="0"/>
+					<e:Rect width="0" height="70%" scaleX="1" scaleY="1" fillColor="0x3481F3" ellipseWidth="20" ellipseHeight="20" verticalCenter="0" left="-5" name="score_process"/>
+				</e:Group>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="0" paddingLeft="0"/>
+				</e:layout>
+				</e:Group>
+				<e:Group id="rival" width="280" height="100%" scaleX="1" scaleY="1" top="0" right="0" name="avater">
+				<e:Group width="181" height="40" y="24" right="0" x="100" scaleX="1" scaleY="1" scrollEnabled="true">
+					<e:Rect width="100%" height="100%" left="0" top="0" x="200" y="-30" scaleX="1" scaleY="1"/>
+					<e:Rect width="0" height="70%" scaleX="1" scaleY="1" fillColor="0xF61737" ellipseWidth="20" ellipseHeight="20" verticalCenter="0" right="-5" name="score_process"/>
+				</e:Group>
+					<e:Group width="100" height="100" x="-251" y="26" scaleX="1" scaleY="1">
+						<e:Rect id="rival_avatar_border" width="100" height="100" fillColor="0x32F72C" name="avater_bg" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="20" ellipseHeight="20"/>
+						<e:Rect id="rival_avatar_mask" width="100" height="100" fillColor="0x32F72C"  scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="20" ellipseHeight="20" x="100" y="0"/>
+						<e:Image id="rival_avatar" scaleX="1" scaleY="1" width="95" source="who_png" height="95" verticalCenter="0" horizontalCenter="0" name="avater_img" mask="{rival_avatar_mask}"/>
+					</e:Group>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="0"/>
+				</e:layout>
+				</e:Group>
+				<e:Label text="VS" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0"/>
+			</e:Group>
+		<e:Label id="question_type" text="—— 单选题 ——" fontFamily="Adobe Heiti Std R" size="36" textColor="0x23BFD5" horizontalCenter="0.5" x="232" scaleX="1" scaleY="1" top="472" bold="true"/>
+		<e:Group id="question_box" width="100%" horizontalCenter="0" top="123" height="324">
+			<e:Rect width="100%" height="100%" left="0" top="0" strokeColor="0x23BFD5" strokeWeight="1" ellipseWidth="20" ellipseHeight="20" fillColor="0xF0FDFF"/>
+			<e:Group width="100%" height="100%" left="0" top="0">
+			</e:Group>
+			<e:Group width="100%" height="100%" left="0" top="0" x="10" y="10">
+				<e:Scroller id="question_title_scroller" width="100%" height="100%" top="34" left="0" bottom="68">
+				<e:Group width="100%">
+					<e:Label id="question_title" text="" y="0" textColor="0x1D292B" width="100%" size="34" fontFamily="PingFang-SC-Medium" lineSpacing="17" x="22" scaleX="1" scaleY="1" left="22" right="22"/>
+					<e:Image id="question_bg" width="100" height="200" x="320" y="32" scaleX="1" scaleY="1"/>
+					<e:layout>
+						<e:HorizontalLayout paddingLeft="20" paddingRight="20" gap="10"/>
+					</e:layout>
+				</e:Group>
+				</e:Scroller>
+			</e:Group>
+			<e:Group width="100%" height="40" x="0" scaleX="1" scaleY="1" bottom="20" left="24" right="24">
+				<e:Group width="200" height="100%" left="0" top="0" x="-24" y="-264" scaleX="1" scaleY="1">
+				<e:Label id="question_index" text="1/6" left="0" height="100%" textColor="0x1D292B" textAlign="center" verticalCenter="0" verticalAlign="middle" fontFamily="Arial-Black" size="26" bold="true"/>
+				</e:Group>
+				<e:Group width="200" height="100%" top="0" right="0">
+				<e:Rect width="40" height="100%" x="29" top="0" visible="false"/>
+				<e:Image width="40" height="100%" x="112" y="-4" source="ax_png"/>
+				<e:Label id="credit" text="" height="100%" textAlign="center" verticalCenter="0" verticalAlign="middle" fontFamily="Arial-Black" textColor="0x1D292B" size="26" anchorOffsetX="0" right="0" bold="true"/>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="right" verticalAlign="middle"/>
+				</e:layout>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group id="question_rule" width="100%" height="70" anchorOffsetY="0" horizontalCenter="0" x="38" scaleX="1" scaleY="1" top="509">
+			<e:Group width="96.5%" height="100%" verticalCenter="0" horizontalCenter="0">
+				<e:Group id="time_progress" width="431" height="26" anchorOffsetX="0" verticalCenter="0" x="65">
+					<e:Rect width="105" height="100%" x="-1" y="13" strokeColor="0x000000" name="time_progress_item" fillColor="0xcbf0f5"/>
+					<e:Rect width="105" height="100%" x="-52" y="-3" scaleX="1" scaleY="1" strokeColor="0x000000" fillColor="0xCBF0F5" name="time_progress_item"/>
+					<e:Rect width="105" height="100%" x="-113" y="-19" scaleX="1" scaleY="1" fillColor="0xCBF0F5" name="time_progress_item"/>
+					<e:Rect width="105" height="100%" x="-113" y="-19" scaleX="1" scaleY="1" fillColor="0xCBF0F5" name="time_progress_item"/>
+					<e:layout>
+					<e:HorizontalLayout gap="3"/>
+					</e:layout>
+				</e:Group>
+				<e:Image width="68" height="78" scaleX="1" scaleY="1" source="game_time_png" top="0" left="0"/>
+			<e:Label id="timeout" text="12S" textColor="0x1D292B" fontFamily="Arial-Black" size="26" right="0" verticalCenter="0" bold="true"/>
+				<e:layout>
+					<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+			<e:Group id="question_answer" width="100%" horizontalCenter="0" top="593" bottom="140">
+				<e:Scroller id="question_answer_scroller" width="100%" height="100%" x="190" y="510" scaleX="1" scaleY="1" bottom="0">
+					<e:Skin>
+                        <e:VScrollBar id="verticalScrollBar" visible="true" autoVisibility="false" width="10" height="100%" right="0">
+                            <e:Skin>
+                                <e:Image width="100%" height="100%" source="resource/assets/ScrollBar/track_sb.png" scale9Grid="1,1,4,4"/>
+                                <e:Image id="thumb" width="10" height="10" source="resource/assets/ScrollBar/roundthumb.png"  scale9Grid="1,1,4,4"/>
+                            </e:Skin>
+                        </e:VScrollBar>
+                    </e:Skin>
+					<e:Group width="100%" height="100%">
+						<e:Group id="text_question" width="100%" x="0" scaleX="1" scaleY="1" top="0">
+							<e:Group id="answer_1" width="100%" x="0" y="-568" scaleX="1" scaleY="1">
+								<e:Rect width="100%" height="1" left="0" bottom="0" fillColor="0xEDDEFF"/>
+								<e:Group width="100%" scaleX="1" scaleY="1" left="0" top="0">
+								<e:Rect width="100%" left="0" top="-2" fillColor="0xDBF8EA" ellipseWidth="10" ellipseHeight="10" name="question_bg" height="100%"/>
+								<e:Group width="100%" top="0" y="0" scaleX="1" scaleY="1" left="0">
+									<e:Group width="34" height="34" x="73" y="24" scaleX="1" scaleY="1">
+										<e:Group id="radio_box0" width="34" height="34" scaleX="1" scaleY="1" left="0" top="0" name="radio">
+										<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="50" ellipseHeight="50" fillColor="0x23BFD5" name="radio_box"/>
+										<e:Rect width="70%" height="70%" fillColor="0xFFFFFF" ellipseWidth="36" ellipseHeight="36" x="5" y="4.5"/>
+										<e:Rect width="50%" height="50%" ellipseWidth="36" ellipseHeight="36" scaleX="1" scaleY="1" fillColor="0x23BFD5" x="8.5" y="8" name="radio_checked" alpha="0"/>
+										</e:Group>
+										<e:Group id="check_box1" width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" name="checkbox">
+										<e:Image width="100%" height="100%" left="0" top="0" source="unchecked_png" name="checkbox_unchecked" visible="false"/>
+										<e:Image width="38" height="34" left="0" top="0" source="checked_png" name="checkbox_checked" visible="false"/>
+										</e:Group>
+										<e:Group id="line_box1" width="100%" height="100%" y="-1" name="line" visible="false">
+										<e:Label text="A" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0" name="sort"/>
+										</e:Group>
+									</e:Group>
+									<e:Label name="answer_text" text="老年痴呆躯体" x="153" y="37" textColor="0x1D292B" verticalAlign="bottom" width="485" lineSpacing="12"/>
+									<e:layout>
+									<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" paddingLeft="20" paddingRight="20" gap="15" paddingTop="30" paddingBottom="30"/>
+									</e:layout>
+								</e:Group>
+								</e:Group>
+								<e:Group width="48" height="48" right="23" verticalCenter="0" name="rival_icon">
+								<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+								<e:Rect id="icon_mask1" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+								<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask1}"/>
+								</e:Group>
+								<e:Image name="right_icon" width="43.2" height="39.9" scaleX="1" scaleY="1" verticalCenter="0" source="answer_right_png" left="23" visible="false"/>
+								<e:Image name="error_icon" width="40" height="44" scaleX="1" scaleY="1" verticalCenter="0" y="110.00000000000011" source="answer_error_png" left="23" visible="false"/>
+							</e:Group>
+							<e:Group id="answer_2" width="100%" x="0" y="-462" scaleX="1" scaleY="1">
+								<e:Rect width="100%" height="1" left="0" bottom="0" fillColor="0xEDDEFF"/>
+								<e:Group width="100%" scaleX="1" scaleY="1" left="0" top="0">
+								<e:Rect width="100%" left="0" top="-2" fillColor="0xDBF8EA" ellipseWidth="10" ellipseHeight="10" name="question_bg" height="100%"/>
+								<e:Group width="100%" top="0" y="0" scaleX="1" scaleY="1" left="0">
+									<e:Group width="34" height="34" x="73" y="24" scaleX="1" scaleY="1">
+										<e:Group id="radio_box1" width="34" height="34" scaleX="1" scaleY="1" left="0" top="0" name="radio">
+										<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="50" ellipseHeight="50" fillColor="0x23BFD5" name="radio_box"/>
+										<e:Rect width="70%" height="70%" fillColor="0xFFFFFF" ellipseWidth="36" ellipseHeight="36" x="5" y="4.5"/>
+										<e:Rect width="50%" height="50%" ellipseWidth="36" ellipseHeight="36" scaleX="1" scaleY="1" fillColor="0x23BFD5" x="8.5" y="8" name="radio_checked" alpha="0"/>
+										</e:Group>
+										<e:Group id="check_box0" width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" name="checkbox">
+										<e:Image width="100%" height="100%" left="0" top="0" source="unchecked_png" name="checkbox_unchecked" visible="false"/>
+										<e:Image width="38" height="34" left="0" top="0" source="checked_png" name="checkbox_checked" visible="false"/>
+										</e:Group>
+										<e:Group id="line_box0" width="100%" height="100%" y="-1" name="line" visible="false">
+										<e:Label text="A" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0" name="sort"/>
+										</e:Group>
+									</e:Group>
+									<e:Label name="answer_text" text="老年痴呆躯体老年痴呆躯体老年痴呆躯体老年痴呆躯体老年痴呆躯体" x="153" y="37" textColor="0x1D292B" verticalAlign="bottom" width="485" lineSpacing="12"/>
+									<e:layout>
+									<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" paddingLeft="20" paddingRight="20" gap="15" paddingTop="30" paddingBottom="30"/>
+									</e:layout>
+								</e:Group>
+								</e:Group>
+								<e:Group width="48" height="48" right="23" verticalCenter="0" visible="false" name="rival_icon">
+								<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+								<e:Rect id="icon_mask2" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+								<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask2}"/>
+								</e:Group>
+								<e:Image name="right_icon" width="43.2" height="39.9" scaleX="1" scaleY="1" verticalCenter="0" source="answer_right_png" left="23" visible="false"/>
+								<e:Image name="error_icon" width="40" height="44" scaleX="1" scaleY="1" verticalCenter="0" y="110.00000000000011" source="answer_error_png" left="23" visible="false"/>
+							</e:Group>
+							<e:Group id="answer_3" width="100%" x="0" y="-318" scaleX="1" scaleY="1">
+								<e:Rect width="100%" height="1" left="0" bottom="0" fillColor="0xEDDEFF"/>
+								<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0">
+								<e:Rect width="100%" left="0" top="-2" fillColor="0xDBF8EA" ellipseWidth="10" ellipseHeight="10" name="question_bg" height="100%"/>
+								<e:Group width="100%" top="0" y="0" scaleX="1" scaleY="1" left="0">
+									<e:Group width="34" height="34" x="73" y="24" scaleX="1" scaleY="1">
+										<e:Group id="radio_box2" width="34" height="34" scaleX="1" scaleY="1" left="0" top="0" name="radio">
+										<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="50" ellipseHeight="50" fillColor="0x23BFD5" name="radio_box"/>
+										<e:Rect width="70%" height="70%" fillColor="0xFFFFFF" ellipseWidth="36" ellipseHeight="36" x="5" y="4.5"/>
+										<e:Rect width="50%" height="50%" ellipseWidth="36" ellipseHeight="36" scaleX="1" scaleY="1" fillColor="0x23BFD5" x="8.5" y="8" name="radio_checked" alpha="0"/>
+										</e:Group>
+										<e:Group id="check_box2" width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" name="checkbox">
+										<e:Image width="100%" height="100%" left="0" top="0" source="unchecked_png" name="checkbox_unchecked" visible="false"/>
+										<e:Image width="38" height="34" left="0" top="0" source="checked_png" name="checkbox_checked" visible="false"/>
+										</e:Group>
+										<e:Group id="line_box2" width="100%" height="100%" y="-1" name="line" visible="false">
+										<e:Label text="A" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0" name="sort"/>
+										</e:Group>
+									</e:Group>
+									<e:Label name="answer_text" text="老年痴呆躯体" x="153" y="37" textColor="0x1D292B" verticalAlign="bottom" width="485" lineSpacing="12"/>
+									<e:layout>
+									<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" paddingLeft="20" paddingRight="20" gap="15" paddingTop="30" paddingBottom="30"/>
+									</e:layout>
+								</e:Group>
+								</e:Group>
+								<e:Group width="48" height="48" right="23" verticalCenter="0" visible="false" name="rival_icon">
+								<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+								<e:Rect id="icon_mask3" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+								<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask3}"/>
+								</e:Group>
+								<e:Image name="right_icon" width="43.2" height="39.9" scaleX="1" scaleY="1" verticalCenter="0" source="answer_right_png" left="23" visible="false"/>
+								<e:Image name="error_icon" width="40" height="44" scaleX="1" scaleY="1" verticalCenter="0" y="110.00000000000011" source="answer_error_png" left="23" visible="false"/>
+							</e:Group>
+							<e:Group id="answer_4" width="100%" x="0" y="-212" scaleX="1" scaleY="1">
+								<e:Rect width="100%" height="1" left="0" bottom="0" fillColor="0xEDDEFF"/>
+								<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" verticalCenter="0">
+								<e:Rect width="100%" left="0" top="-2" fillColor="0xDBF8EA" ellipseWidth="10" ellipseHeight="10" name="question_bg" height="100%"/>
+								<e:Group width="100%" top="0" y="0" scaleX="1" scaleY="1" left="0">
+									<e:Group width="34" height="34" x="73" y="24" scaleX="1" scaleY="1">
+										<e:Group id="radio_box3" width="34" height="34" scaleX="1" scaleY="1" left="0" top="0" name="radio">
+										<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="50" ellipseHeight="50" fillColor="0x23BFD5" name="radio_box"/>
+										<e:Rect width="70%" height="70%" fillColor="0xFFFFFF" ellipseWidth="36" ellipseHeight="36" x="5" y="4.5"/>
+										<e:Rect width="50%" height="50%" ellipseWidth="36" ellipseHeight="36" scaleX="1" scaleY="1" fillColor="0x23BFD5" x="8.5" y="8" name="radio_checked" alpha="0"/>
+										</e:Group>
+										<e:Group id="check_box3" width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" name="checkbox">
+										<e:Image width="100%" height="100%" left="0" top="0" source="unchecked_png" name="checkbox_unchecked" visible="false"/>
+										<e:Image width="38" height="34" left="0" top="0" source="checked_png" name="checkbox_checked" visible="false"/>
+										</e:Group>
+										<e:Group id="line_box3" width="100%" height="100%" y="-1" name="line" visible="false">
+										<e:Label text="A" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0" name="sort"/>
+										</e:Group>
+									</e:Group>
+									<e:Label name="answer_text" text="老年痴呆躯体" x="153" y="37" textColor="0x1D292B" verticalAlign="bottom" width="485" lineSpacing="12"/>
+									<e:layout>
+									<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" paddingLeft="20" paddingRight="20" gap="15" paddingTop="30" paddingBottom="30"/>
+									</e:layout>
+								</e:Group>
+								</e:Group>
+								<e:Group width="48" height="48" right="23" verticalCenter="0" visible="false" name="rival_icon">
+								<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+								<e:Rect id="icon_mask4" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+								<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask4}"/>
+								</e:Group>
+								<e:Image name="right_icon" width="43.2" height="39.9" scaleX="1" scaleY="1" verticalCenter="0" source="answer_right_png" left="23" visible="false"/>
+								<e:Image name="error_icon" width="40" height="44" scaleX="1" scaleY="1" verticalCenter="0" y="110.00000000000011" source="answer_error_png" left="23" visible="false"/>
+							</e:Group>
+							<e:Group id="answer_5" width="100%" x="0" y="-106" scaleX="1" scaleY="1">
+								<e:Rect width="100%" height="1" left="0" bottom="0" fillColor="0xEDDEFF"/>
+								<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" verticalCenter="0">
+								<e:Rect width="100%" left="0" top="-2" fillColor="0xDBF8EA" ellipseWidth="10" ellipseHeight="10" name="question_bg" height="100%"/>
+								<e:Group width="100%" top="0" y="0" scaleX="1" scaleY="1" left="0">
+									<e:Group width="34" height="34" x="73" y="24" scaleX="1" scaleY="1">
+										<e:Group id="radio_box4" width="34" height="34" scaleX="1" scaleY="1" left="0" top="0" name="radio">
+										<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="50" ellipseHeight="50" fillColor="0x23BFD5" name="radio_box"/>
+										<e:Rect width="70%" height="70%" fillColor="0xFFFFFF" ellipseWidth="36" ellipseHeight="36" x="5" y="4.5"/>
+										<e:Rect width="50%" height="50%" ellipseWidth="36" ellipseHeight="36" scaleX="1" scaleY="1" fillColor="0x23BFD5" x="8.5" y="8" name="radio_checked" alpha="0"/>
+										</e:Group>
+										<e:Group id="check_box4" width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" name="checkbox">
+										<e:Image width="100%" height="100%" left="0" top="0" source="unchecked_png" name="checkbox_unchecked" visible="false"/>
+										<e:Image width="38" height="34" left="0" top="0" source="checked_png" name="checkbox_checked" visible="false"/>
+										</e:Group>
+										<e:Group id="line_box4" width="100%" height="100%" y="-1" name="line" visible="false">
+										<e:Label text="A" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0" name="sort"/>
+										</e:Group>
+									</e:Group>
+									<e:Label name="answer_text" text="老年痴呆躯体" x="153" y="37" textColor="0x1D292B" verticalAlign="bottom" width="485" lineSpacing="12"/>
+									<e:layout>
+									<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" paddingLeft="20" paddingRight="20" gap="15" paddingTop="30" paddingBottom="30"/>
+									</e:layout>
+								</e:Group>
+								</e:Group>
+								<e:Group width="48" height="48" right="23" verticalCenter="0" name="rival_icon" visible="false">
+								<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+								<e:Rect id="icon_mask5" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+								<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask5}"/>
+								</e:Group>
+								<e:Image name="right_icon" width="43.2" height="39.9" scaleX="1" scaleY="1" verticalCenter="0" source="answer_right_png" left="23" visible="false"/>
+								<e:Image name="error_icon" width="40" height="44" scaleX="1" scaleY="1" verticalCenter="0" y="110.00000000000011" source="answer_error_png" left="23" visible="false"/>
+							</e:Group>
+							<e:Group id="answer_6" width="100%" x="10" y="-96" scaleX="1" scaleY="1">
+								<e:Rect width="100%" height="1" left="0" bottom="0" fillColor="0xEDDEFF"/>
+								<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" verticalCenter="0">
+								<e:Rect width="100%" left="0" top="-2" fillColor="0xDBF8EA" ellipseWidth="10" ellipseHeight="10" name="question_bg" height="100%"/>
+								<e:Group width="100%" top="0" y="0" scaleX="1" scaleY="1" left="0">
+									<e:Group width="34" height="34" x="73" y="24" scaleX="1" scaleY="1">
+									<e:Group id="radio_box6" width="34" height="34" scaleX="1" scaleY="1" left="0" top="0" name="radio">
+										<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="50" ellipseHeight="50" fillColor="0x23BFD5" name="radio_box"/>
+										<e:Rect width="70%" height="70%" fillColor="0xFFFFFF" ellipseWidth="36" ellipseHeight="36" x="5" y="4.5"/>
+										<e:Rect width="50%" height="50%" ellipseWidth="36" ellipseHeight="36" scaleX="1" scaleY="1" fillColor="0x23BFD5" x="8.5" y="8" name="radio_checked" alpha="0"/>
+									</e:Group>
+									<e:Group id="check_box6" width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" name="checkbox">
+										<e:Image width="100%" height="100%" left="0" top="0" source="unchecked_png" name="checkbox_unchecked" visible="false"/>
+										<e:Image width="38" height="34" left="0" top="0" source="checked_png" name="checkbox_checked" visible="false"/>
+									</e:Group>
+									<e:Group id="line_box6" width="100%" height="100%" y="-1" name="line" visible="false">
+										<e:Label text="A" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0" name="sort"/>
+									</e:Group>
+									</e:Group>
+									<e:Label name="answer_text" text="老年痴呆躯体" x="153" y="37" textColor="0x1D292B" verticalAlign="bottom" width="485" lineSpacing="12"/>
+									<e:layout>
+									<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" paddingLeft="20" paddingRight="20" gap="15" paddingTop="30" paddingBottom="30"/>
+									</e:layout>
+								</e:Group>
+								</e:Group>
+								<e:Group width="48" height="48" right="23" verticalCenter="0" name="rival_icon" visible="false">
+								<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+								<e:Rect id="icon_mask10" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+								<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask10}"/>
+								</e:Group>
+								<e:Image name="right_icon" width="43.2" height="39.9" scaleX="1" scaleY="1" verticalCenter="0" source="answer_right_png" left="23" visible="false"/>
+								<e:Image name="error_icon" width="40" height="44" scaleX="1" scaleY="1" verticalCenter="0" y="110.00000000000011" source="answer_error_png" left="23" visible="false"/>
+							</e:Group>
+							<e:Group id="answer_7" width="100%" x="20" y="-86" scaleX="1" scaleY="1">
+								<e:Rect width="100%" height="1" left="0" bottom="0" fillColor="0xEDDEFF"/>
+								<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" verticalCenter="0">
+								<e:Rect width="100%" left="0" top="-2" fillColor="0xDBF8EA" ellipseWidth="10" ellipseHeight="10" name="question_bg" height="100%"/>
+								<e:Group width="100%" top="0" y="0" scaleX="1" scaleY="1" left="0">
+									<e:Group width="34" height="34" x="73" y="24" scaleX="1" scaleY="1">
+									<e:Group id="radio_box7" width="34" height="34" scaleX="1" scaleY="1" left="0" top="0" name="radio">
+										<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="50" ellipseHeight="50" fillColor="0x23BFD5" name="radio_box"/>
+										<e:Rect width="70%" height="70%" fillColor="0xFFFFFF" ellipseWidth="36" ellipseHeight="36" x="5" y="4.5"/>
+										<e:Rect width="50%" height="50%" ellipseWidth="36" ellipseHeight="36" scaleX="1" scaleY="1" fillColor="0x23BFD5" x="8.5" y="8" name="radio_checked" alpha="0"/>
+									</e:Group>
+									<e:Group id="check_box7" width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" name="checkbox">
+										<e:Image width="100%" height="100%" left="0" top="0" source="unchecked_png" name="checkbox_unchecked" visible="false"/>
+										<e:Image width="38" height="34" left="0" top="0" source="checked_png" name="checkbox_checked" visible="false"/>
+									</e:Group>
+									<e:Group id="line_box7" width="100%" height="100%" y="-1" name="line" visible="false">
+										<e:Label text="A" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0" name="sort"/>
+									</e:Group>
+									</e:Group>
+									<e:Label name="answer_text" text="老年痴呆躯体" x="153" y="37" textColor="0x1D292B" verticalAlign="bottom" width="485" lineSpacing="12"/>
+									<e:layout>
+									<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" paddingLeft="20" paddingRight="20" gap="15" paddingTop="30" paddingBottom="30"/>
+									</e:layout>
+								</e:Group>
+								</e:Group>
+								<e:Group width="48" height="48" right="23" verticalCenter="0" name="rival_icon" visible="false">
+								<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+								<e:Rect id="icon_mask11" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+								<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask11}"/>
+								</e:Group>
+								<e:Image name="right_icon" width="43.2" height="39.9" scaleX="1" scaleY="1" verticalCenter="0" source="answer_right_png" left="23" visible="false"/>
+								<e:Image name="error_icon" width="40" height="44" scaleX="1" scaleY="1" verticalCenter="0" y="110.00000000000011" source="answer_error_png" left="23" visible="false"/>
+							</e:Group>
+							<e:Group id="answer_8" width="100%" x="0" y="-106" scaleX="1" scaleY="1">
+								<e:Rect width="100%" height="1" left="0" bottom="0" fillColor="0xEDDEFF"/>
+								<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" verticalCenter="0">
+								<e:Rect width="100%" left="0" top="-2" fillColor="0xDBF8EA" ellipseWidth="10" ellipseHeight="10" name="question_bg" height="100%"/>
+								<e:Group width="100%" top="0" y="0" scaleX="1" scaleY="1" left="0">
+									<e:Group width="34" height="34" x="73" y="24" scaleX="1" scaleY="1">
+									<e:Group id="radio_box8" width="34" height="34" scaleX="1" scaleY="1" left="0" top="0" name="radio">
+										<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="50" ellipseHeight="50" fillColor="0x23BFD5" name="radio_box"/>
+										<e:Rect width="70%" height="70%" fillColor="0xFFFFFF" ellipseWidth="36" ellipseHeight="36" x="5" y="4.5"/>
+										<e:Rect width="50%" height="50%" ellipseWidth="36" ellipseHeight="36" scaleX="1" scaleY="1" fillColor="0x23BFD5" x="8.5" y="8" name="radio_checked" alpha="0"/>
+									</e:Group>
+									<e:Group id="check_box8" width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" name="checkbox">
+										<e:Image width="100%" height="100%" left="0" top="0" source="unchecked_png" name="checkbox_unchecked" visible="false"/>
+										<e:Image width="38" height="34" left="0" top="0" source="checked_png" name="checkbox_checked" visible="false"/>
+									</e:Group>
+									<e:Group id="line_box8" width="100%" height="100%" y="-1" name="line" visible="false">
+										<e:Label text="A" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0" name="sort"/>
+									</e:Group>
+									</e:Group>
+									<e:Label name="answer_text" text="老年痴呆躯体" x="153" y="37" textColor="0x1D292B" verticalAlign="bottom" width="485" lineSpacing="12"/>
+									<e:layout>
+									<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" paddingLeft="20" paddingRight="20" gap="15" paddingTop="30" paddingBottom="30"/>
+									</e:layout>
+								</e:Group>
+								</e:Group>
+								<e:Group width="48" height="48" right="23" verticalCenter="0" name="rival_icon" visible="false">
+								<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+								<e:Rect id="icon_mask12" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+								<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask12}"/>
+								</e:Group>
+								<e:Image name="right_icon" width="43.2" height="39.9" scaleX="1" scaleY="1" verticalCenter="0" source="answer_right_png" left="23" visible="false"/>
+								<e:Image name="error_icon" width="40" height="44" scaleX="1" scaleY="1" verticalCenter="0" y="110.00000000000011" source="answer_error_png" left="23" visible="false"/>
+							</e:Group>
+							<e:layout>
+								<e:VerticalLayout gap="12"/>
+							</e:layout>
+						</e:Group>
+						<e:Group id="img_question" width="100%" height="450" scaleX="1" scaleY="1" top="0" left="0" x="0" y="252" visible="false">
+							<e:Group id="answer_img_1" width="270" height="210" left="0" top="0">
+							<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0">
+								<e:Rect name="answer_img_border" width="270" height="210" left="0" top="0" ellipseWidth="20" ellipseHeight="20" fillColor="0xEDDEFF" x="10" y="10"/>
+								<e:Rect width="264" height="204" ellipseWidth="20" ellipseHeight="20" fillColor="0xFFFFFF" verticalCenter="0" horizontalCenter="0"/>
+								<e:Rect id="answer_img_mask0" width="264" height="204" ellipseWidth="20" ellipseHeight="20" fillColor="0xFFFFFF" verticalCenter="0" horizontalCenter="0" x="3" y="3" scaleX="1" scaleY="1"/>
+								<e:Image name="answer_img" width="100%" height="100%" scaleX="1" scaleY="1" source="" mask="{answer_img_mask0}" left="0" top="0"/>
+							</e:Group>
+							<e:Group width="48" height="48" x="24" y="24" scaleX="1" scaleY="1">
+								<e:Group width="100%" height="100%" top="0" left="0" name="option">
+								<e:Group name="answer_img_btn" width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1">
+									<e:Rect width="100%" height="100%" left="0" top="0" fillColor="0xFFFFFF" strokeColor="0x23BFD5" strokeWeight="1" ellipseWidth="100" ellipseHeight="100"/>
+									<e:Label text="A" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0"/>
+								</e:Group>
+								</e:Group>
+								<e:Group id="img_check_box0" width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" name="checkbox" x="-24.000000000000014" y="-24" visible="false">
+								<e:Image width="100%" height="100%" left="0" top="0" source="unchecked_png" name="checkbox_unchecked" visible="false"/>
+								<e:Image width="53" height="100%" left="0" top="0" source="checked_png" name="checkbox_checked" visible="false"/>
+								</e:Group>
+								<e:Image name="answer_img_error" width="40" height="48" scaleX="1" scaleY="1" source="answer_error_png" horizontalCenter="0" verticalCenter="0" x="4" y="0" visible="false"/>
+								<e:Image name="answer_img_right" width="40" height="48" scaleX="1" scaleY="1" source="answer_right_png" horizontalCenter="0" verticalCenter="0" x="4" y="0" visible="false"/>
+							</e:Group>
+								<e:Group width="48" height="48" name="rival_icon" scaleX="1" scaleY="1" right="24" bottom="24" visible="false">
+									<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+									<e:Rect id="icon_mask6" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+									<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask6}"/>
+								</e:Group>
+							</e:Group>
+							<e:Group id="answer_img_2" width="270" height="210" scaleX="1" scaleY="1" right="0" top="0">
+							<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0">
+								<e:Rect name="answer_img_border" width="270" height="210" left="0" top="0" ellipseWidth="20" ellipseHeight="20" fillColor="0xEDDEFF" x="10" y="10"/>
+								<e:Rect width="264" height="204" ellipseWidth="20" ellipseHeight="20" fillColor="0xFFFFFF" verticalCenter="0" horizontalCenter="0"/>
+								<e:Rect id="answer_img_mask1" width="264" height="204" ellipseWidth="20" ellipseHeight="20" fillColor="0xFFFFFF" verticalCenter="0" horizontalCenter="0" x="3.000000000000057" y="3" scaleX="1" scaleY="1"/>
+								<e:Image name="answer_img" width="100%" height="100%" scaleX="1" scaleY="1" source="" mask="{answer_img_mask1}" right="0" top="0"/>
+							</e:Group>
+							<e:Group width="48" height="48" scaleX="1" scaleY="1" x="24" y="24">
+								<e:Group width="100%" height="100%" left="0" top="0" name="option">
+								<e:Group name="answer_img_btn" width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1">
+									<e:Rect width="100%" height="100%" left="0" top="0" fillColor="0xFFFFFF" strokeColor="0x23BFD5" strokeWeight="1" ellipseWidth="100" ellipseHeight="100"/>
+									<e:Label text="B" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0"/>
+								</e:Group>
+								</e:Group>
+								<e:Group id="img_check_box1" width="100%" height="100%" scaleX="1" scaleY="1" name="checkbox" horizontalCenter="0" verticalCenter="0">
+								<e:Image width="100%" height="100%" source="unchecked_png" name="checkbox_unchecked" horizontalCenter="0" verticalCenter="0" visible="false"/>
+								<e:Image width="53" height="100%" source="checked_png" name="checkbox_checked" horizontalCenter="0" verticalCenter="0" visible="false"/>
+								</e:Group>
+								<e:Image name="answer_img_error" width="40" height="48" scaleX="1" scaleY="1" source="answer_error_png" horizontalCenter="0" verticalCenter="0" x="3.999999999999943" y="0" visible="false"/>
+								<e:Image name="answer_img_right" width="40" height="48" scaleX="1" scaleY="1" source="answer_right_png" horizontalCenter="0" verticalCenter="0" x="3.999999999999943" y="0" visible="false"/>
+							</e:Group>
+								<e:Group width="48" height="48" name="rival_icon" scaleX="1" scaleY="1" right="24" bottom="24" x="198" y="384" visible="false">
+									<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+									<e:Rect id="icon_mask7" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+									<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask7}"/>
+								</e:Group>
+							</e:Group>
+							<e:Group id="answer_img_3" width="270" height="210" scaleX="1" scaleY="1" left="0" bottom="0">
+							<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0">
+								<e:Rect name="answer_img_border" width="270" height="210" left="0" top="0" ellipseWidth="20" ellipseHeight="20" fillColor="0xEDDEFF" x="10" y="10"/>
+								<e:Rect width="264" height="204" ellipseWidth="20" ellipseHeight="20" fillColor="0xFFFFFF" verticalCenter="0" horizontalCenter="0"/>
+								<e:Rect id="answer_img_mask2" width="264" height="204" ellipseWidth="20" ellipseHeight="20" fillColor="0xFFFFFF" verticalCenter="0" horizontalCenter="0" x="3" y="3" scaleX="1" scaleY="1"/>
+								<e:Image name="answer_img" width="100%" height="100%" scaleX="1" scaleY="1" source="" mask="{answer_img_mask2}" verticalCenter="0" left="0"/>
+							</e:Group>
+							<e:Group width="48" height="48" scaleX="1" scaleY="1" x="24" y="24">
+								<e:Group width="100%" height="100%" left="0" top="0" name="option">
+								<e:Group name="answer_img_btn" width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1">
+									<e:Rect width="100%" height="100%" left="0" top="0" fillColor="0xFFFFFF" strokeColor="0x23BFD5" strokeWeight="1" ellipseWidth="100" ellipseHeight="100"/>
+									<e:Label text="C" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0"/>
+								</e:Group>
+								<e:Image name="answer_img_error" width="40" height="48" scaleX="1" scaleY="1" source="answer_error_png" horizontalCenter="0" verticalCenter="0" x="4" y="0" visible="false"/>
+								<e:Image name="answer_img_right" width="40" height="48" scaleX="1" scaleY="1" source="answer_right_png" horizontalCenter="0" verticalCenter="0" x="4" y="0" visible="false"/>
+								</e:Group>
+								<e:Group id="img_check_box2" width="100%" height="100%" scaleX="1" scaleY="1" name="checkbox" horizontalCenter="0" verticalCenter="0" visible="false">
+								<e:Image width="100%" height="100%" source="unchecked_png" name="checkbox_unchecked" horizontalCenter="0" verticalCenter="0" x="0" y="0" scaleX="1" scaleY="1" visible="false"/>
+								<e:Image width="53" height="100%" source="checked_png" name="checkbox_checked" horizontalCenter="0" verticalCenter="0" x="-1.9999999999999858" y="0" scaleX="1" scaleY="1" visible="false"/>
+								</e:Group>
+							</e:Group>
+								<e:Group width="48" height="48" name="rival_icon" scaleX="1" scaleY="1" right="24" bottom="24" x="587" y="138" visible="false">
+									<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+									<e:Rect id="icon_mask8" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+									<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask8}"/>
+								</e:Group>
+							</e:Group>
+							<e:Group id="answer_img_4" width="270" height="210" scaleX="1" scaleY="1" right="0" bottom="0">
+							<e:Group width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0">
+								<e:Rect name="answer_img_border" width="270" height="210" left="0" top="0" ellipseWidth="20" ellipseHeight="20" fillColor="0xEDDEFF" x="10" y="10"/>
+								<e:Rect width="264" height="204" ellipseWidth="20" ellipseHeight="20" fillColor="0xFFFFFF" verticalCenter="0" horizontalCenter="0"/>
+								<e:Rect id="answer_img_mask3" width="264" height="204" ellipseWidth="20" ellipseHeight="20" fillColor="0xFFFFFF" verticalCenter="0" horizontalCenter="0" x="3" y="3" scaleX="1" scaleY="1"/>
+								<e:Image name="answer_img" width="100%" height="100%" scaleX="1" scaleY="1" source="" mask="{answer_img_mask3}" bottom="0"/>
+							</e:Group>
+							<e:Group width="48" height="48" scaleX="1" scaleY="1" x="24" y="24">
+								<e:Group width="100%" height="100%" left="0" top="0" name="option">
+								<e:Group name="answer_img_btn" width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1">
+									<e:Rect width="100%" height="100%" left="0" top="0" fillColor="0xFFFFFF" strokeColor="0x23BFD5" strokeWeight="1" ellipseWidth="100" ellipseHeight="100"/>
+									<e:Label text="D" textColor="0x1D292B" horizontalCenter="0" verticalCenter="0"/>
+								</e:Group>
+								</e:Group>
+								<e:Group id="img_check_box3" width="100%" height="100%" scaleX="1" scaleY="1" name="checkbox" horizontalCenter="0" verticalCenter="0" visible="false">
+								<e:Image width="100%" height="100%" source="unchecked_png" name="checkbox_unchecked" horizontalCenter="0" verticalCenter="0"/>
+								<e:Image width="53" height="100%" source="checked_png" name="checkbox_checked" horizontalCenter="0" verticalCenter="0"/>
+								</e:Group>
+								<e:Image name="answer_img_error" width="40" height="48" scaleX="1" scaleY="1" source="answer_error_png" horizontalCenter="0" verticalCenter="0" x="3.999999999999943" y="0" visible="false"/>
+								<e:Image name="answer_img_right" width="40" height="48" scaleX="1" scaleY="1" source="answer_right_png" horizontalCenter="0" verticalCenter="0" x="3.999999999999943" y="0" visible="false"/>
+							</e:Group>
+								<e:Group width="48" height="48" name="rival_icon" scaleX="1" scaleY="1" right="24" bottom="24" x="198" y="138" visible="false">
+									<e:Rect width="100%" height="100%" fillColor="0x32F72C" name="rival_icon_border" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10"/>
+									<e:Rect id="icon_mask9" width="100%" height="100%" fillColor="0x32F72C" scaleX="1" scaleY="1" left="0" top="0" ellipseWidth="10" ellipseHeight="10" x="100" y="0"/>
+									<e:Image scaleX="1" scaleY="1" width="90%" source="who_png" height="90%" verticalCenter="0" horizontalCenter="0" name="rival_img" mask="{icon_mask9}"/>
+								</e:Group>
+							</e:Group>
+						</e:Group>
+					</e:Group>
+				</e:Scroller>
+				<e:layout>
+				<e:VerticalLayout gap="12"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group width="500" height="32" horizontalCenter="0" bottom="32">
+		<e:Label text="© 北京大学第六医院/国家精神卫生项目办出品" fontFamily="PingFang-SC-Medium" textColor="0xFF514E" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" size="20"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" horizontalAlign="center" paddingBottom="0" gap="15"/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="transtions" text="Label" horizontalCenter="0" verticalCenter="0" size="40" textColor="0x000000" bold="true" visible="false"/>
+	<e:Group id="bottom_btns" width="80%" height="84" y="1230" horizontalCenter="0" bottom="32" alpha="0">
+		<e:Group id="reset_btn" width="0" height="84" y="-5" horizontalCenter="0" bottom="25" x="160" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" source="btn_bg4_png"/>
+			<e:Label text="重新选择" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" size="30"/>
+		</e:Group>
+		<e:Group id="submit_btn" width="280" height="84" y="-5" horizontalCenter="0" bottom="25" x="160" scaleX="1" scaleY="1">
+			<e:Image width="100%" height="100%" scaleX="1" scaleY="1" top="0" left="0" source="btn_bg3_png"/>
+			<e:Label text="选好了" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" size="30"/>
+		</e:Group>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+	<e:Image width="147" height="133" source="game_bg2_png" right="0" bottom="0"/>
+</e:Skin>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GiftMessage.tsSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="172ebdb5a85" ></w:Config>
+	<e:Rect width="100%" height="100%" x="0" y="0" strokeAlpha="1" fillAlpha="0.6" fillColor="0x2B2727" alpha="1" scaleX="1" scaleY="1"/>
+	<e:Group width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="messagebox" width="586" height="526" alpha="1" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" anchorOffsetX="293" anchorOffsetY="263">
+			<e:Rect id="bg" width="100%" height="100%" x="0" y="0" fillColor="0xFFFFFF"/>
+			<e:Label id="gift_info" text="" fontFamily="PingFangSC-Medium" textColor="0x1D292B" horizontalCenter="0" bottom="192" textAlign="center" width="500" height="100"/>
+			<e:Label id="gift_name" text="" y="135" fontFamily="ZhenyanGB-Regular" textColor="0x454F5B" size="44" bold="true" border="false" stroke="1" strokeColor="0x454F5B" textAlign="center" horizontalCenter="0"/>
+			<e:Group id="bottom_btns" width="482" height="70" horizontalCenter="0" bottom="49">
+			<e:Group id="close_btn" width="100%" height="70" scaleX="1" scaleY="1" bottom="0" left="0">
+				<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0x23BFD5" strokeColor="0x23BFD5" ellipseWidth="100" ellipseHeight="100"/>
+				<e:Label text="知道了" verticalCenter="0" horizontalCenter="0"/>
+			</e:Group>
+			</e:Group>
+			<e:Image width="243" height="157" source="buy_top_png" horizontalCenter="0" x="0" scaleX="1" scaleY="1" y="-78.5" visible="false"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

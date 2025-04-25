@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MyGiftItemSkin" width="670" height="114" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="172f46caebe" ></w:Config>
+	<e:Rect id="bottom_board" height="1" left="52" bottom="0" fillColor="0xCFCFCF" right="52"/>
+	<e:Group width="200" height="100%" top="0" left="37">
+		<e:Group width="64" height="64" scaleX="1" scaleY="1" verticalCenter="0" left="0">
+			<e:Rect id="gift_img_mask" width="64" height="64" left="0" top="0"/>
+			<e:Image id="gift_img" width="64" height="64" source="shopping_key_png" scaleX="1" scaleY="1" left="0" verticalCenter="0" x="-7" y="8" mask="{gift_img_mask}"/>
+		</e:Group>
+		<e:Group id="gift_info" width="200" height="60" x="101" anchorOffsetY="0" verticalCenter="0">
+			<e:Label id="gift_name" text="" fontFamily="PingFangSC-Semibold" scaleX="1" scaleY="1" textColor="0x1D292B" left="0" verticalCenter="0"/>
+			<e:Label id="gift_time" text="" fontFamily="PingFangSC-Semibold" scaleX="1" scaleY="1" textColor="0x1D292B" left="0" verticalCenter="0" x="-101" y="10" size="24"/>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="left" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

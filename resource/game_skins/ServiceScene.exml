@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ServiceSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1728e448ba7" ></w:Config>
+	<e:Rect width="100%" height="100%" left="1" top="0" fillColor="0xB2EDF7"/>
+	<e:Image width="100%" height="130" x="0" bottom="0" source="yb_detail_bottom1_png"/>
+	<e:Group width="662" height="1122" y="189.9" horizontalCenter="0" top="63" bottom="22">
+		<e:Rect width="100%" height="100%" top="0" left="0" strokeColor="0x3481F3" fillColor="0xE8FCFE" strokeWeight="1"/>
+		<e:Image width="338" height="81" x="162" scaleX="1" scaleY="1" y="-40.5" source="service_top_png"/>
+		<e:Scroller id="text_scroll" width="619" height="1000" x="20" y="90" scrollPolicyV="on" scrollPolicyH="off" anchorOffsetY="0" anchorOffsetX="0" bottom="0" top="40">
+				<e:Group  y="84" x="0" width="100%" height="1200">
+				<e:Label text="欢迎来到精神卫生知识答题小游戏，您将在玩游戏的过程中了解更多精神心理相关知识。" x="221" y="155" fontFamily="PingFangSC-Regular" textColor="0x1d292b" verticalAlign="bottom" width="100%"  height="100" lineSpacing="8"/>
+				<e:Label text="根据个人喜好，您可以选择排位赛、PK对战、因病施治三种游戏模式。" x="188" y="91" scaleX="1" scaleY="1" textColor="0x1d292b" fontFamily="PingFangSC-Regular" verticalAlign="top" width="100%"  height="80" lineSpacing="8"/>
+				
+				<e:Label name="title" text="排位赛" x="0" y="189" scaleX="1" scaleY="1" textColor="0x3481F3" fontFamily="PingFangSC-Regular" verticalAlign="middle" textAlign="left" width="100%"  bold="true" size="34"/>
+				<e:Label name="rule" text="每关6题，随着闯关的延续，答题难度也会增加，从浅入深的带您掌握精神心理相关知识。" x="168" y="71" scaleX="1" scaleY="1" textColor="0x666666" fontFamily="PingFangSC-Regular" verticalAlign="middle" width="100%"  lineSpacing="8"/>
+				<e:Label name="title" text="PK对战" x="0" y="189" scaleX="1" scaleY="1" textColor="0x3481F3" fontFamily="PingFangSC-Regular" verticalAlign="middle" textAlign="left" width="100%"  bold="true" size="34"/>
+				<e:Label name="rule" text="可邀请微信好友跟您一起对战，还可以选择在线自动匹配对手来与您一决高下。" x="168" y="71" scaleX="1" scaleY="1" textColor="0x666666" fontFamily="PingFangSC-Regular" verticalAlign="middle" width="100%"  lineSpacing="8"/>
+				<e:Label name="title" text="因病施治" x="0" y="189" scaleX="1" scaleY="1" textColor="0x3481F3" fontFamily="PingFangSC-Regular" verticalAlign="middle" textAlign="left" width="100%"  bold="true" size="34"/>
+				<e:Label name="rule" text="按不同精神疾病分类，您可以完整的了解某一种精神疾病的症状、治疗、病因、康复等方面的知识。" x="168" y="71" scaleX="1" scaleY="1" textColor="0x666666" fontFamily="PingFangSC-Regular" verticalAlign="middle" width="100%"  lineSpacing="8"/>
+				<e:Label name="title" text="游戏等级" x="0" y="189" scaleX="1" scaleY="1" textColor="0x3481F3" fontFamily="PingFangSC-Regular" verticalAlign="middle" textAlign="left" width="100%"  bold="true" size="34"/>
+				<e:Label name="rule" text="无论参与哪种游戏模式，您都可以获得积分奖励，积分可以提升等级与排名。" x="168" y="71" scaleX="1" scaleY="1" textColor="0x666666" fontFamily="PingFangSC-Regular" verticalAlign="middle" width="100%"  lineSpacing="8"/>
+				<e:Label name="title" text="金币有什么作用？" x="0" y="189" scaleX="1" scaleY="1" textColor="0x3481F3" fontFamily="PingFangSC-Regular" verticalAlign="middle" textAlign="left" width="100%"  bold="true" size="34"/>
+				<e:Label name="rule" text="无论参与哪种游戏模式，您都可以获得金币奖励，金币可以购买游戏中的礼物帮助我们进行答题。" x="2.5" y="766" scaleX="1" scaleY="1" textColor="0x666666" fontFamily="PingFangSC-Regular" verticalAlign="middle" width="100%"  lineSpacing="8"/>
+				<e:Label name="title" text="解锁钥匙是什么？" x="0" y="189" scaleX="1" scaleY="1" textColor="0x3481F3" fontFamily="PingFangSC-Regular" verticalAlign="middle" textAlign="left" width="100%"  bold="true" size="34"/>
+				<e:Label name="rule" text="解题钥匙可通过礼物页面用金币购买，在排位赛和因病施治中，遇到不会的难题，钥匙可以帮助您解答，帮助下回答一题将消耗掉一把钥匙，每轮最多使用两把解题钥匙。" x="168" y="71" scaleX="1" scaleY="1" textColor="0x666666" fontFamily="PingFangSC-Regular" verticalAlign="middle" width="100%"  lineSpacing="8"/>
+				<e:Label name="title" text="积分加成卡是什么？" x="0" y="189" scaleX="1" scaleY="1" textColor="0x3481F3" fontFamily="PingFangSC-Regular" verticalAlign="middle" textAlign="left" width="100%"  bold="true" size="34" />
+				<e:Label name="rule" text="可通过礼物页面用金币购买，购买后，在24小时内获得的积分可增加10%。" x="168" y="71" scaleX="1" scaleY="1" textColor="0x666666" fontFamily="PingFangSC-Regular" verticalAlign="middle" width="100%"  lineSpacing="8"/>
+				
+				<e:Label id="view_btn" text="请点我或扫码关注精神卫生686，了解更多精神卫生、心理健康知识。" x="0" y="189" scaleX="1" scaleY="1" fontFamily="PingFangSC-Regular" verticalAlign="bottom" textAlign="center" height="80" width="100%"  bottom="50" lineSpacing="8" bold="true" textColor="0x8c0024"/>
+				<e:Image width="300" height="300" x="110" bottom="0" source="qrcode_png" />
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" paddingBottom="20" gap="20"/>
+				</e:layout>
+				</e:Group>
+				
+		</e:Scroller>
+	</e:Group>
+	<e:Image width="100%" height="130" x="0" bottom="0" source="yb_detail_bottom2_png"/>
+</e:Skin>

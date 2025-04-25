@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AboutLevelItemSkin" width="564" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="172f4e51c70" ></w:Config>
+	<e:Rect width="17" height="17" scaleX="1" scaleY="1" fillColor="0xf7d724" left="0" ellipseWidth="20" ellipseHeight="20" verticalCenter="0" strokeAlpha="1" strokeColor="0x23bfd5" strokeWeight="3"/>
+	<e:Label id="text" text="" verticalCenter="0" x="40" textColor="0x1d292b" fontFamily="PingFangSC"/>
+</e:Skin>

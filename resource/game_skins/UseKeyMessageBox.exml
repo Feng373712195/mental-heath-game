@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UseKeyMessageBoxSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171df090ec6" ></w:Config>
+	<e:Rect width="100%" height="100%" x="0" y="0" strokeAlpha="1" fillAlpha="0.6" fillColor="0x2B2727"/>
+	<e:Group width="100%" height="100%" left="0" top="0">
+		<e:Group id="messagebox" width="586" height="734" alpha="1" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="0" anchorOffsetX="293" anchorOffsetY="367">
+			<e:Rect id="bg" width="100%" height="100%" x="0" y="0" fillColor="0xFFFFFF"/>
+			<e:Image width="243" height="157" y="-60" source="buy_top_png" horizontalCenter="0"/>
+			<e:Label text="正确答案" y="141" size="44" textColor="0x454f5b" bold="true" horizontalCenter="0" fontFamily="ZhenyanGB"/>
+			<e:Group width="496" y="240" height="344" horizontalCenter="0">
+			<e:Rect width="100%" height="100%" top="0" fillColor="0xE8FCFE" x="0" visible="false"/>
+			<e:Group width="100%" height="100%" left="0" top="0">
+				<e:Group width="100%" height="20%" anchorOffsetY="0" left="0" top="0" x="30" y="265" scaleX="1" scaleY="1">
+				<e:Label id="correct_answer" text="" textColor="0x1D292B" fontFamily="PingFangSC-Medium" textAlign="left" left="0" top="0"/>
+				<e:Rect width="100%" height="1" left="0" strokeColor="0x000000" fillColor="0x23BFD5" bottom="0"/>
+				</e:Group>
+				<e:Scroller id="analysis_scroll" width="100%" height="70%" x="127" y="50" scrollPolicyV="on" scrollPolicyH="off">
+				<e:Group>
+					<e:Label id="analysis" text="" x="0" width="100%" height="100%" fontFamily="                                 PingFangSC-Regular                                                              PingFangSC-Regular                            " textColor="0x1D292B" lineSpacing="20" rotation="359.99" scaleX="1" scaleY="1" top="0"/>
+				</e:Group>
+				</e:Scroller>
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="justify" gap="30" paddingTop="0" paddingBottom="0" paddingRight="20" paddingLeft="20"/>
+				</e:layout>
+			</e:Group>
+			</e:Group>
+			<e:Group id="close_btn" width="482" height="80" scaleX="1" scaleY="1" horizontalCenter="0" y="626">
+			<e:Rect width="100%" height="100%" x="0" y="0" fillColor="0x23BFD5" strokeColor="0x23BFD5" ellipseWidth="100" ellipseHeight="100" visible="false"/>
+			<e:Image width="100%" height="100%" top="0" left="0" source="btn_bg5_png"/>
+			<e:Label text="学到了" verticalCenter="0" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

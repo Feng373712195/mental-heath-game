@@ -1,0 +1,35 @@
+{
+	"groups": [
+		{
+			"keys": "game_bg1_png,game_bg2_png,question_box_png,back_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/images/game/game_bg1.png",
+			"type": "image",
+			"name": "game_bg1_png"
+		},
+		{
+			"url": "assets/images/game/game_bg2.png",
+			"type": "image",
+			"name": "game_bg2_png"
+		},
+		{
+			"url": "assets/images/game/question_box.png",
+			"type": "image",
+			"name": "question_box_png"
+		},
+		{
+			"url": "assets/images/game/game_time.png",
+			"type": "image",
+			"name": "game_time_png"
+		},
+		{
+			"url": "assets/images/back.png",
+			"type": "image",
+			"name": "back_png"
+		}
+	]
+}

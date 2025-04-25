@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultMessageBoxSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171ded39415" ></w:Config>
+	<e:Rect width="100%" height="100%" x="0" y="0" strokeAlpha="1" fillAlpha="0.6" fillColor="0x2B2727"/>
+	<e:Group width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="messagebox" width="586" height="834" alpha="1" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="68" anchorOffsetX="293" anchorOffsetY="417">
+			<e:Rect id="bg" width="100%" height="100%" x="0" y="0" fillColor="0xFFFFFF" fillAlpha="0"/>
+			<e:Image id="bg_img" width="20" height="20" x="-10" y="-14" left="-10" top="-10" bottom="-10" right="-10"/>
+			<e:Label id="title" text="答案与解析" textColor="0x000000" size="40" horizontalCenter="0" y="51"/>
+			<e:Group id="top_tip" width="580" height="52.5" left="0" top="51">
+			<e:Image id="ax_img" width="54.5" height="50" x="226" y="12" source="ax_png"/>
+			<e:Label id="axnum" text="+10" x="328" y="20" textColor="0x454f5b" bold="true" fontFamily="Arial-Black"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+			</e:Group>
+			<e:Image id="tip_text1" width="270" height="43" horizontalCenter="0" source="right_tip_png" top="147"/>
+			<e:Image id="tip_text2" width="320" height="43" horizontalCenter="0" source="error_tip_png" top="147"/>
+			<e:Group id="message_ctx" width="496" horizontalCenter="0" height="444" bottom="150">
+			<e:Rect width="100%" height="100%" top="0" fillColor="0xe8fcfe" x="0"/>
+			<e:Group width="100%" height="100%" left="0" top="0">
+				<e:Group width="100%" height="20%" anchorOffsetY="0" left="0" top="0" x="30" y="265" scaleX="1" scaleY="1">
+				<e:Label id="right_answer" text="答案：A" textColor="0x1d292b" fontFamily="PingFangSC-Medium" textAlign="left" left="0" top="0"/>
+				<e:Rect width="100%" height="1" left="0" strokeColor="0x000000" fillColor="0x23bfd5" bottom="0"/>
+				</e:Group>
+				<e:Scroller id="analysis_scroll" width="100%" height="70%" x="127" y="50" scrollPolicyV="on" scrollPolicyH="off">
+				<e:Group>
+					<e:Label id="analysis" text="解析：答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。答案详解详情答案详解 答案详解详情答案详解详情详 答案详解详情答案详解详情答 案详解详情情。" x="0" width="100%" fontFamily="                                 PingFangSC-Regular                                                              PingFangSC-Regular                            " textColor="0x1d292b" lineSpacing="20" rotation="359.99" scaleX="1" scaleY="1" top="0"/>
+				</e:Group>
+				</e:Scroller>
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="justify" paddingRight="30" paddingLeft="30" paddingTop="40" paddingBottom="40" gap="30"/>
+				</e:layout>
+			</e:Group>
+			</e:Group>
+			<e:Group id="close_btn" width="482" height="70" scaleX="1" scaleY="1" horizontalCenter="0" bottom="38">
+			<e:Image width="100%" height="100%" source="btn_bg5_png" left="0" top="0"/>
+			<e:Label id="close_btn_text" text="下一题" verticalCenter="0" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

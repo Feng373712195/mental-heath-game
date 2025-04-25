@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="NoKeyMessageBoxSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171df14b89a" ></w:Config>
+	<e:Rect width="100%" height="100%" x="0" y="0" strokeAlpha="1" fillAlpha="0.6" fillColor="0x2B2727"/>
+	<e:Group width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="messagebox" width="586" height="477" alpha="1" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" anchorOffsetX="293" anchorOffsetY="238.5">
+			<e:Rect id="bg" width="100%" height="100%" x="0" y="0" fillColor="0xFFFFFF"/>
+			<e:Label text="钥匙0把" x="223" y="141" size="44" fontFamily="ZhenyanGB" textColor="0x454f5b" bold="true"/>
+			<e:Label text="您没有钥匙，不能使用哦" y="240" fontFamily="PingFangSC-Medium" textColor="0x1d292b" horizontalCenter="0"/>
+			<e:Group id="bottom_btns" width="90%" height="81" horizontalCenter="0" bottom="49">
+			<e:Group id="close_btn" width="253" height="81" scaleX="1" scaleY="1" bottom="0" left="0">
+				<e:Image width="100%" height="100%" source="btn_bg3_png" left="0" top="0"/>
+				<e:Label text="努力靠自己" verticalCenter="0" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group width="253" height="81" scaleX="1" scaleY="1" bottom="0" y="52" right="0">
+				<e:Image width="100%" height="100%" left="0" top="0" x="-274" y="-10.999999999999886" scaleX="1" scaleY="1" source="btn_bg4_png"/>
+				<e:Label text="买钥匙" verticalCenter="0" horizontalCenter="0"/>
+			</e:Group>
+			</e:Group>
+			<e:Image width="132" height="132" source="nokey_top_png" horizontalCenter="0" y="-57"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

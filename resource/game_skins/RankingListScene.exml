@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankingListSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171ddb2eab2" ></w:Config>
+	<e:Rect id="bg" left="0" right="0" top="0" bottom="0"/>
+	<e:Image width="100%" height="265" left="0" top="0" source="ranking_top_png"/>
+	<e:Group width="650" horizontalCenter="0" bottom="0" top="200">
+		<e:Scroller id="ranking_view" width="650" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="0" x="0" scaleX="1" scaleY="1" height="100%">
+			<e:Group width="100%" height="100%" bottom="0"/>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankingResultSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171df8dcfa7" ></w:Config>
+	<e:Rect id="bg" width="100%" height="100%" left="0" top="0" bottom="0"/>
+	<e:Group id="message_box" width="662" height="812" y="267" horizontalCenter="0">
+		<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="-3" fillColor="0xffffff" top="0" ellipseWidth="20" ellipseHeight="20"/>
+		<e:Group width="100%" height="100%" left="0" top="0">
+			<e:Image id="ranking_top" width="537" height="381" horizontalCenter="0" y="-224.9" source=""/>
+			<e:Group id="prize_view" width="80%" height="145.45" y="133.00000000000006" horizontalCenter="0" x="-184" scaleX="1" scaleY="1" anchorOffsetY="0">
+				<e:Group width="50%" height="100%" left="0" top="0">
+					<e:Image width="80" height="84" x="96" y="31" source="ax_png"/>
+				<e:Label id="credit" text="+10" left="103" bottom="17" textColor="0x454f5b" bold="true" fontFamily="Arial-Black" stroke="1" strokeColor="0x454f5b"/>
+					<e:Label id="s_credit" text="系统奖励 +5" left="103" bottom="17" textColor="0x454F5B" fontFamily="PingFangSC-Regular" strokeColor="0x454F5B" x="103" y="98.44999999999999" scaleX="1" scaleY="1" size="26"/>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="top" gap="15"/>
+				</e:layout>
+				</e:Group>
+				<e:Group width="50%" height="100%" right="0" top="0">
+					<e:Image width="85" height="84" x="146" y="74" source="jb_png"/>
+				<e:Label id="money" text="+100" left="0" bottom="0" x="-165" y="170" scaleX="1" scaleY="1" fontFamily="Arial-Black" textColor="0x454f5b" bold="true" border="false" stroke="1" strokeColor="0x454f5b"/>
+					<e:Label id="s_money" text="系统奖励 +5" left="103" bottom="17" textColor="0x454F5B" fontFamily="PingFangSC-Regular" strokeColor="0x454F5B" x="-162" y="102.44999999999999" scaleX="1" scaleY="1" size="26"/>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="top" gap="15"/>
+				</e:layout>
+				</e:Group>
+			</e:Group>
+			<e:Group id="score_box" width="100%" height="336.36" y="310.73" scaleX="1" scaleY="1" anchorOffsetY="0" x="0">
+				<e:Label text="—— 答题积分获取详情 ——" y="25.91" horizontalCenter="0" textColor="0x1d292b" fontFamily="PingFangSC-Medium"/>
+				<e:Group width="100%" height="242.42" anchorOffsetX="0" anchorOffsetY="0" left="0" bottom="0.36000000000001364">
+					<e:Group width="100%" height="50%" x="12.999999999999993" y="-24.84999999999991" scaleX="1" scaleY="1">
+						<e:Group width="33.3%" height="100%" x="-12.999999999999993" y="24.84999999999991" scaleX="1" scaleY="1">
+							<e:Label id="score1" text="+0" x="69" y="14" fontFamily="PingFangSC-Semibold" textColor="0x1d292b" size="36"/>
+							<e:Label text="第一题" x="67" y="64" fontFamily="PingFangSC-Regular" textColor="0x1d292b" size="26"/>
+							<e:layout>
+							<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+							</e:layout>
+						</e:Group>
+						<e:Group width="33.3%" height="100%" x="98" y="24.84999999999991" scaleX="1" scaleY="1">
+							<e:Label id="score2" text="+0" x="69" y="14" fontFamily="PingFangSC-Semibold" textColor="0x1D292B" size="36"/>
+							<e:Label text="第二题" x="67" y="64" fontFamily="PingFangSC-Regular" textColor="0x1D292B" size="26"/>
+							<e:layout>
+							<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+							</e:layout>
+						</e:Group>
+						<e:Group width="33.3%" height="100%" x="210" y="24.84999999999991" scaleX="1" scaleY="1">
+							<e:Label id="score3" text="+0" x="69" y="14" fontFamily="PingFangSC-Semibold" textColor="0x1D292B" size="36"/>
+							<e:Label text="第三题" x="67" y="64" fontFamily="PingFangSC-Regular" textColor="0x1D292B" size="26"/>
+							<e:layout>
+							<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+							</e:layout>
+						</e:Group>
+						<e:layout>
+							<e:HorizontalLayout gap="0"/>
+						</e:layout>
+					</e:Group>
+					<e:Group width="100%" height="50%" x="12.999999999999993" y="-118.69999999999993" scaleX="1" scaleY="1">
+						<e:Group width="33.3%" height="100%" x="-12.999999999999993" y="24.84999999999991">
+						<e:Label id="score4" text="+0" x="69" y="14" fontFamily="PingFangSC-Semibold" textColor="0x1D292B" size="36"/>
+						<e:Label text="第四题" x="67" y="64" fontFamily="PingFangSC-Regular" textColor="0x1D292B" size="26"/>
+						<e:layout>
+							<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+						</e:layout>
+						</e:Group>
+						<e:Group width="33.3%" height="100%" x="98" y="24.84999999999991">
+						<e:Label id="score5" text="+0" x="69" y="14" fontFamily="PingFangSC-Semibold" textColor="0x1D292B" size="36"/>
+						<e:Label text="第五题" x="67" y="64" fontFamily="PingFangSC-Regular" textColor="0x1D292B" size="26"/>
+						<e:layout>
+							<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+						</e:layout>
+						</e:Group>
+						<e:Group width="33.3%" height="100%" x="210" y="24.84999999999991">
+						<e:Label id="score6" text="+0" x="69" y="14" fontFamily="PingFangSC-Semibold" textColor="0x1D292B" size="36"/>
+						<e:Label text="第六题" x="67" y="64" fontFamily="PingFangSC-Regular" textColor="0x1D292B" size="26"/>
+						<e:layout>
+							<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="20"/>
+						</e:layout>
+						</e:Group>
+						<e:layout>
+							<e:HorizontalLayout gap="0"/>
+						</e:layout>
+					</e:Group>
+					<e:layout>
+						<e:VerticalLayout gap="0"/>
+					</e:layout>
+				</e:Group>
+			</e:Group>
+			<e:Group width="85%" height="70" horizontalCenter="0" bottom="40">
+				<e:Group id="back_btn" width="262" height="100%" left="0" bottom="0">
+					<e:Image width="100%" height="100%" left="0" top="0" source="btn_bg3_png"/>
+					<e:Label text="返回大厅" horizontalCenter="0" verticalCenter="0"/>
+				</e:Group>
+				<e:Group id="play_btn" width="262" height="100%" scaleX="1" scaleY="1" right="0" bottom="0">
+					<e:Image width="100%" height="100%" scaleX="1" scaleY="1" right="0" top="0" source="btn_bg3_png"/>
+					<e:Label id="play_btn_text" text="继续挑战" horizontalCenter="0" verticalCenter="0" x="-79" y="20" scaleX="1" scaleY="1"/>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

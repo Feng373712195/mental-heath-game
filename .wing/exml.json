@@ -1,0 +1,197 @@
+{
+  "171d8eca3b9": {
+    "path": "Game/Scene/GameScene/GameScene.ts",
+    "class": "GameScene",
+    "parentPath": ""
+  },
+  "171d8f700b6": {
+    "path": "Game/Scene/StartScene/LoginInMessageBox.ts",
+    "class": "LoginInMessageBox",
+    "parentPath": ""
+  },
+  "171da05b024": {
+    "path": "Game/Scene/StartScene/LevelUpMessageBox.ts",
+    "class": "LevelUpMessageBox",
+    "parentPath": ""
+  },
+  "171da0669ea": {
+    "path": "Game/Scene/StartScene/LevelUpMessageBox.ts",
+    "class": "LevelUpMessageBox",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true,
+    "globalAdsorbEnable": true
+  },
+  "171ddb24eca": {
+    "path": "Game/Scene/RankingListScene.ts",
+    "class": "RankingListScene",
+    "parentPath": ""
+  },
+  "171ddb2eab2": {
+    "path": "Game/Scene/RankingListScene/RankingListScene.ts",
+    "class": "RankingListScene",
+    "parentPath": ""
+  },
+  "171ddb49386": {
+    "path": "Game/Scene/RankingListScene/RankingItem.ts",
+    "class": "RankingItem",
+    "parentPath": ""
+  },
+  "171ded39415": {
+    "path": "Game/Scene/GameScene/ResultMessageBox.ts",
+    "class": "ResultMessageBox",
+    "parentPath": ""
+  },
+  "171df08c017": {
+    "path": "Game/Scene/GameScene/UseKeyMessage.ts",
+    "class": "UseKeyMessage",
+    "parentPath": ""
+  },
+  "171df090ec6": {
+    "path": "Game/Scene/GameScene/UseKeyMessageBox.ts",
+    "class": "UseKeyMessageBox",
+    "parentPath": ""
+  },
+  "171df14b89a": {
+    "path": "Game/Scene/GameScene/NoKeyMessageBox.ts",
+    "class": "NoKeyMessageBox",
+    "parentPath": ""
+  },
+  "171df8dcfa7": {
+    "path": "Game/Scene/RankingResultScene/RankingResultScene.ts",
+    "class": "RankingResultScene",
+    "parentPath": ""
+  },
+  "171e0234ee4": {
+    "path": "Game/Scene/PkScene/PkScene.ts",
+    "class": "PkScene",
+    "parentPath": ""
+  },
+  "171e2facb97": {
+    "path": "Game/Scene/PkScene/PkWaitMessageBox.ts",
+    "class": "PkWaitMessageBox",
+    "parentPath": ""
+  },
+  "171e37fca36": {
+    "path": "Game/Scene/PkResultScene/PkResu;yScene.ts",
+    "class": "PkResu;yScene",
+    "parentPath": ""
+  },
+  "171e380d533": {
+    "path": "Game/Scene/PkResultScene/PkResultScene.ts",
+    "class": "PkResultScene",
+    "parentPath": ""
+  },
+  "171e86aeca4": {
+    "path": "Game/Scene/ChooseTypeScene/ChooseTypeScene.ts",
+    "class": "ChooseTypeScene",
+    "parentPath": ""
+  },
+  "171ef512111": {
+    "path": "Game/Scene/ChooseTypeDetailScene/ChooseTypeDetailScenen.ts",
+    "class": "ChooseTypeDetailScenen",
+    "parentPath": ""
+  },
+  "171f1fe70cf": {
+    "path": "Game/UI/Loading.ts",
+    "class": "Loading",
+    "parentPath": ""
+  },
+  "171f1ff7211": {
+    "path": "Game/UI/Loading/Loading.ts",
+    "class": "Loading",
+    "parentPath": ""
+  },
+  "171fd094fdb": {
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": 275.758
+      }
+    ]
+  },
+  "171fdaa5979": {
+    "path": "Game/Scene/ShoppingMallScene/ExchangeItem.ts",
+    "class": "ExchangeItem",
+    "parentPath": ""
+  },
+  "171fe1e1683": {
+    "path": "Game/Scene/ShoppingMallScene/BuySuccessMessage.ts",
+    "class": "BuySuccessMessage",
+    "parentPath": ""
+  },
+  "171fe336c53": {
+    "path": "Game/Scene/ShoppingMallScene/ExchangeSuccesMessage.ts",
+    "class": "ExchangeSuccesMessage",
+    "parentPath": ""
+  },
+  "17203f5d335": {
+    "path": "Game/Scene/PkGameScene/PkGameScene.ts",
+    "class": "PkGameScene",
+    "parentPath": ""
+  },
+  "1728e448ba7": {
+    "guideLines": [
+      {
+        "type": "v",
+        "pos": 32
+      }
+    ]
+  },
+  "1728e58a7ea": {
+    "path": "Game/Scene/AboutScene/AboutScene.ts",
+    "class": "AboutScene",
+    "parentPath": ""
+  },
+  "172df8d03ff": {
+    "path": "Game/Scene/AboutLevel/AboutLevel.ts",
+    "class": "AboutLevel",
+    "parentPath": ""
+  },
+  "172df8e54b5": {
+    "path": "Game/Scene/AboutLevelScene/AboutLevelScene.ts",
+    "class": "AboutLevelScene",
+    "parentPath": ""
+  },
+  "172ebdb5a85": {
+    "path": "Game/Scene/ShoppingMallScene/GiftMessage.ts.ts",
+    "class": "GiftMessage.ts",
+    "parentPath": ""
+  },
+  "172f3e023d1": {
+    "path": "Game/Scene/ChooseTypeDetailScene/ChooseTypeItem.ts",
+    "class": "ChooseTypeItem",
+    "parentPath": ""
+  },
+  "172f46caebe": {
+    "path": "Game/Scene/ShoppingMallScene/MyGiftItem.ts",
+    "class": "MyGiftItem",
+    "parentPath": ""
+  },
+  "172f4e49706": {
+    "path": "Game/Scene/AboutLevelScene/AboutLevelItem.ts.ts",
+    "class": "AboutLevelItem.ts",
+    "parentPath": ""
+  },
+  "172f4e51c70": {
+    "path": "Game/Scene/AboutLevelScene/AboutLevelItem.ts",
+    "class": "AboutLevelItem",
+    "parentPath": ""
+  },
+  "173484d51a1": {
+    "path": "../resource/game_skins/SearchScene.ts",
+    "class": "SearchScene",
+    "parentPath": ""
+  },
+  "173484e008a": {
+    "path": "Game/Scene/SearchScene/SearchScene.ts",
+    "class": "SearchScene",
+    "parentPath": ""
+  },
+  "1734865a763": {
+    "path": "Game/Scene/SearchScene/SeachItem.ts",
+    "class": "SeachItem",
+    "parentPath": ""
+  }
+}

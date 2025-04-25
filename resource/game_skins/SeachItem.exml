@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SeachItemSkin" width="690" height="193" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1734865a763" ></w:Config>
+	<e:Label id="title" text="标题，最多显示一行" top="40" left="23" right="23" size="34" textColor="0x1d292b"/>
+	<e:Label id="context" text="题目内容，最多显示两行题目内容，最多显示两 题目内容，最多显示两行行" top="95" left="23" right="23" lineSpacing="6" textColor="0x1d292b" size="28"/>
+	<e:Rect width="90%" height="1" x="25" fillColor="0x25c0d4" bottom="0"/>
+</e:Skin>

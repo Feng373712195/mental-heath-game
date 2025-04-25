@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin  class="StartSceneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  width="750" height="1334">
+	<w:Config id="171af3a8f4c" ></w:Config>
+	<e:Rect width="100%" height="100%" fillColor="0xf0fdff" left="-1" top="0"/>
+	<e:Group width="100%" height="200" x="0" y="0" bottom="80" top="0">
+		<e:Image width="750" top="0" horizontalCenter="0" source="start_top_png" height="175" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Group id="user_keys" width="306" height="68" y="142" horizontalCenter="0" x="222" scaleX="1" scaleY="1">
+			<e:Rect width="99%" height="100%" scaleX="1" scaleY="1" fillColor="0x1d292b" ellipseWidth="100" ellipseHeight="100" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image width="55" height="57" source="key_png" verticalCenter="0" x="23"/>
+			<e:Label id="user_key" text="0/5" size="36" bold="true" horizontalCenter="0.5" verticalCenter="2"/>
+			<e:Label text="+" right="20" size="36" bold="true" verticalCenter="2" visible="false"/>
+			<e:Image id="push_key_btn" width="37" height="37" x="246" source="push_png" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="user_box" width="660" height="100" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="217" x="45.00000000000001" y="217" scaleX="1" scaleY="1">
+			<e:Group id="user_info" height="100%" anchorOffsetX="0" left="0" top="0">
+			<e:Group id="right_group" height="100%" scaleX="1" scaleY="1" left="0" top="0">
+				<e:Rect id="user_avatar_border" width="73" height="73" horizontalCenter="0" verticalCenter="0" anchorOffsetX="20" anchorOffsetY="20" ellipseWidth="20" ellipseHeight="20"/>
+				<e:Rect id="user_avatar_mask" width="67" height="67" horizontalCenter="0" verticalCenter="0" ellipseWidth="20" ellipseHeight="20"/>
+				<e:Image id="user_avatar" width="67" height="67" scaleX="1" scaleY="1" source="who_png" horizontalCenter="0" verticalCenter="0" mask="{user_avatar_mask}"/>
+			</e:Group>
+			<e:Group id="left_group" height="60%" scaleX="1" scaleY="1" y="20" x="80">
+				<e:Group height="28.79" anchorOffsetY="0" top="0" left="0">
+				<e:Label id="user_name" text="" textColor="0x454f5b" left="0" bold="true" verticalCenter="0"/>
+				<e:Label id="user_level" text="" right="0" textColor="0x454f5b" size="24" bottom="0"/>
+				<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="12" paddingRight="0" paddingTop="0" paddingLeft="2"/>
+				</e:layout>
+				</e:Group>
+				<e:Group width="179" height="13" anchorOffsetY="0" y="47" x="13">
+				<e:Rect id="progress_bg" width="100%" height="100%" top="0" strokeColor="0x000000" fillColor="0xcce9f0" left="0"/>
+				<e:Rect id="progree_color" height="100%" left="0" top="0" fillColor="0x23bfd5"/>
+				</e:Group>
+				<e:layout>
+					<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+				<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="6"/>
+				</e:layout>
+			</e:Group>
+			<e:Group height="100%" y="0" left="280">
+			<e:Image width="70" height="70" x="131" y="40" scaleX="1" scaleY="1" source="ax_png" rotation="358.53"/>
+			<e:Label id="credit" text="" textColor="0x454f5b" verticalCenter="0" bold="true" right="0"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" gap="12" paddingLeft="20" paddingTop="10"/>
+			</e:layout>
+			</e:Group>
+			<e:Group height="100%" top="0" right="0">
+			<e:Image width="70" height="70" x="51" y="43" source="jb_png"/>
+			<e:Label id="money" text="" textColor="0x454F5B" bold="true" verticalCenter="0" y="284" scaleX="1" scaleY="1" right="0"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="right" verticalAlign="middle" gap="12" paddingTop="10"/>
+			</e:layout>
+			</e:Group>
+			<e:layout>
+				<e:HorizontalLayout gap="0" horizontalAlign="justify"/>
+			</e:layout>
+		</e:Group>
+		<e:Scroller id="menu_warp" width="640" height="200" y="339" top="312" bottom="80" horizontalCenter="0" scrollPolicyH="off">
+			<e:Group width="100%">
+				<e:Group id="menu" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" top="0" width="640">
+					<e:Group id="menu_item_1" width="640" height="192" x="36" y="38">
+					<e:Image width="100%" height="100%" left="0" top="0" source="rank_btn_png"/>
+					</e:Group>
+					<e:Group id="menu_item_2" width="640" height="190" x="-4" y="-466" scaleX="1" scaleY="1">
+					<e:Image width="100%" height="100%" left="0" top="0" x="0" y="206.0000000000001" scaleX="1" scaleY="1" source="pk_btn_png"/>
+					</e:Group>
+					<e:Group id="menu_item_3" width="640" height="180" x="6" y="-456" scaleX="1" scaleY="1">
+					<e:Image width="100%" height="100%" left="0" top="0" x="0" y="206" scaleX="1" scaleY="1" source="yb_btn_png"/>
+					</e:Group>
+					<e:Group id="menu_item_4" width="640" height="145" x="-80" y="2170" scaleX="1" scaleY="1">
+					<e:Image width="100%" height="100%" left="0" top="0" x="0" y="133.9999999999999" scaleX="1" scaleY="1" source="spc_btn_png"/>
+					</e:Group>
+					<e:Group id="menu_item_5" width="640" height="145" x="-50" y="-768" scaleX="1" scaleY="1">
+					<e:Image width="100%" height="100%" left="0" top="0" x="0" y="206" scaleX="1" scaleY="1" source="search_btn_png"/>
+					</e:Group>
+					<e:Group id="bottom_copyright" width="640" height="100" visible="false">
+					<e:Label text="© 北京大学第六医院/国家精神卫生项目办出品" fontFamily="PingFang-SC-Medium" textColor="0xFF514E" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" size="20" verticalAlign="bottom"/>
+					</e:Group>
+					<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="middle"/>
+					</e:layout>
+				</e:Group>
+			</e:Group>
+		</e:Scroller>
+		<e:Group id="meue_block" width="100%" height="200" y="1172" left="0" x="0" scaleX="1" scaleY="1"/>
+		<e:Image id="music_btn" width="50" height="50" right="30" top="30" source="" x="670.0000000000001" y="30" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group width="721" height="79" bottom="10" horizontalCenter="0">
+		<e:Rect width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" fillColor="0xa1eff9" ellipseWidth="10" ellipseHeight="10"/>
+		<e:Group id="bottom_nav" width="100%" height="100%" y="0" x="0" scaleX="1" scaleY="1">
+			<e:Group id="bottom_nav_1" width="80" height="100%" x="48" scaleX="1" scaleY="1" bottom="0">
+			<e:Label text="排行榜" horizontalCenter="0" bottom="15" size="26" stroke="3" strokeColor="0x57a9bb"/>
+				<e:Image width="70" height="70" source="bottom_nav1_png" y="-35" horizontalCenter="0" x="280.00000000000006" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group id="bottom_nav_2" width="80" height="100%" x="247" scaleX="1" scaleY="1" bottom="0">
+			<e:Label text="礼物" scaleX="1" scaleY="1" horizontalCenter="0" bottom="15" size="26" strokeColor="0x57a9bb" stroke="3"/>
+				<e:Image width="64" height="70" y="-35" horizontalCenter="0" x="-192" scaleX="1" scaleY="1" source="bottom_nav2_png"/>
+			</e:Group>
+			<e:Group id="bottom_nav_3" width="80" height="100%" x="429" scaleX="1" scaleY="1" bottom="0">
+			<e:Label text="客服" scaleX="1" scaleY="1" horizontalCenter="0" bottom="15" size="26" strokeColor="0x57a9bb" stroke="3"/>
+				<e:Image width="84" height="70" y="-35" horizontalCenter="0" x="-100.99999999999989" scaleX="1" scaleY="1" source="bottom_nav3_png"/>
+			</e:Group>
+			<e:Group id="bottom_nav_4" width="80" height="100%" x="631" scaleX="1" scaleY="1" bottom="0">
+			<e:Label text="关于" scaleX="1" scaleY="1" horizontalCenter="0" bottom="15" size="26" strokeColor="0x57a9bb" stroke="3"/>
+				<e:Image width="70" height="70" y="-35" horizontalCenter="0" x="-302.99999999999994" scaleX="1" scaleY="1" source="bottom_nav4_png"/>
+			</e:Group>
+			<e:layout>
+			<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="activity_tip" width="100%" height="80" top="0" right="0" visible="false">
+		<e:Rect width="100%" height="100%" top="0" anchorOffsetX="0" left="0" fillAlpha="0.8" strokeAlpha="0.2"/>
+		<e:Label text=">" scaleX="1" scaleY="1" right="30" verticalCenter="0"/>
+		<e:Group height="100%" top="-2" anchorOffsetX="0" left="167" width="657.58" right="0">
+			<e:Label id="user_count" text="邀请好友：" y="23" scaleX="1" scaleY="1" left="0"/>
+			<e:Label id="get_credit" text="获得积分：" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" gap="20"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

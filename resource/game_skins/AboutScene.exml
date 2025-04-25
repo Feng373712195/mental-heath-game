@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="AboutSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="1728e58a7ea" ></w:Config>
+	<e:Rect width="100%" height="100%" left="1" top="0" fillColor="0xB2EDF7"/>
+	<e:Image width="100%" height="130" x="0" bottom="0" source="yb_detail_bottom1_png"/>
+	<e:Group width="662" height="1249" y="189.9" horizontalCenter="0" top="63">
+		<e:Rect width="100%" height="100%" top="0" left="0" strokeColor="0x23BFD5" fillColor="0xE8FCFE" strokeWeight="1" />
+		<e:Image width="338" height="81" scaleX="1" scaleY="1" y="-40.5" source="about_top_png" horizontalCenter="0"/>
+		<e:Scroller id="analysis_scroll" width="619" height="1100" x="20" y="90" scrollPolicyV="on" scrollPolicyH="off" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Group>
+				<e:Label text="2019年发表的最新精神障碍流行病学调查结果显示，我国18岁以上人口各种精神障碍终生患病率为16.57%，6个人中就有1个人至少患有一种精神障碍。数字触目惊心，提醒着我们精神障碍并不遥远，每个人都有可能在人生的某个阶段遇到精神心理问题的困扰。" lineSpacing="28" width="100%" left="0" textColor="0x000000"/>
+				<e:Label text="北京大学第六医院/国家精神卫生项目办公室组织设计了本款精神卫生知识答题小游戏，期望融学习与娱乐于一体，以更轻松活泼的科普方式，帮助大家了解精神心理相关知识。" lineSpacing="28" width="100%" left="0" textColor="0x000000" x="-20" y="327.33" scaleX="1" scaleY="1"/>
+				<e:Label id="view_btn" text="点击我，您可以先观看我们前期制作的精神卫生科普视频再答题，提高闯关成功率。" x="23" y="400" textColor="0x8c0024" width="100%" lineSpacing="28" textAlign="left"/>
+				<e:Label text="精神健康是健康的二分之一，没有精神健康就没有健康。让我们主动学习相关知识，积极维护自身精神健康，并关爱帮助周围人。我们每一个人都是自己精神健康的第一责任人。" lineSpacing="28" width="100%" left="0" textColor="0x000000" x="-20" y="237.32999999999998" scaleX="1" scaleY="1"/>
+				<e:Label text="游戏过程中如您发现问题，可以关注微信公众号“精神卫生686”并留言。首次采用小游戏形式进行精神卫生科普，难免有不足之处，恳请广大用户批评指正。" lineSpacing="28" width="100%" left="0" textColor="0x000000" x="-20" y="147.32999999999998" scaleX="1" scaleY="1" height="500" verticalAlign="top"/>
+				<e:layout>
+					<e:VerticalLayout verticalAlign="top" gap="60"/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+	<e:Image width="100%" height="130" x="0" bottom="0" source="yb_detail_bottom2_png"/>
+</e:Skin>

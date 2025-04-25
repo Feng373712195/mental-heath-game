@@ -1,0 +1,11 @@
+{"file":"game.png","frames":{
+"about_level_top_png":{"x":1171,"y":165,"w":676,"h":162,"offX":0,"offY":0,"sourceW":676,"sourceH":162},
+"about_logo_png":{"x":1171,"y":329,"w":620,"h":118,"offX":4,"offY":4,"sourceW":628,"sourceH":126},
+"about_top_png":{"x":1171,"y":1,"w":676,"h":162,"offX":0,"offY":0,"sourceW":676,"sourceH":162},
+"answer_error_png":{"x":1939,"y":150,"w":69,"h":73,"offX":6,"offY":10,"sourceW":80,"sourceH":88},
+"answer_right_png":{"x":1849,"y":150,"w":88,"h":86,"offX":0,"offY":10,"sourceW":88,"sourceH":96},
+"game_bg2_png":{"x":1171,"y":449,"w":270,"h":243,"offX":26,"offY":27,"sourceW":296,"sourceH":270},
+"game_time_png":{"x":1849,"y":1,"w":137,"h":147,"offX":2,"offY":2,"sourceW":140,"sourceH":160},
+"logo_ax_png":{"x":1939,"y":225,"w":72,"h":64,"offX":0,"offY":0,"sourceW":72,"sourceH":64},
+"question_box_png":{"x":1,"y":1,"w":1168,"h":660,"offX":0,"offY":12,"sourceW":1168,"sourceH":672},
+"ranking_s_png":{"x":1,"y":663,"w":1060,"h":724,"offX":6,"offY":8,"sourceW":1074,"sourceH":762}}}

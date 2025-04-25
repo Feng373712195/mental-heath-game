@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PkSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171e0234ee4" ></w:Config>
+	<e:Rect id="bg" left="-1" top="1" bottom="-1" width="100%"/>
+	<e:Image width="279" height="132" source="pk_top_png" horizontalCenter="0" top="91"/>
+	<e:Group id="warp" width="614" height="210" horizontalCenter="0" top="361">
+		<e:Group width="160" height="210" scaleX="1" scaleY="1" left="0" top="0">
+			<e:Group width="166" height="166" x="-1" y="740" scaleX="1" scaleY="1">
+				<e:Rect id="user_avatar_board" width="166" height="166" scaleX="1" scaleY="1" fillColor="0xff0000" ellipseWidth="20" ellipseHeight="20" horizontalCenter="0" verticalCenter="0"/>
+				<e:Rect id="user_avatar_mask" width="160" height="160" scaleX="1" scaleY="1" fillColor="0xFF0000" ellipseWidth="20" ellipseHeight="20" horizontalCenter="0" verticalCenter="0" x="0" y="181"/>
+				<e:Image id="user_avatar" width="160" height="160" source="who_png" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" mask="{user_avatar_mask}"/>
+			</e:Group>
+			<e:Label id="user_name" text="快乐的小猪" x="-158" y="-124" scaleX="1" scaleY="1" textColor="0x000000"/>
+			<e:layout>
+			<e:VerticalLayout gap="15" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group width="160" height="210" scaleX="1" scaleY="1" right="0" top="0">
+			<e:Group width="166" height="166" x="-455" y="740" scaleX="1" scaleY="1">
+				<e:Rect id="rival_avatar_board" width="166" height="166" scaleX="1" scaleY="1" fillColor="0xFF0000" ellipseWidth="20" ellipseHeight="20" horizontalCenter="0" verticalCenter="0"/>
+				<e:Rect id="rival_avatar_mask" width="160" height="160" scaleX="1" scaleY="1" fillColor="0xFF0000" ellipseWidth="20" ellipseHeight="20" horizontalCenter="0" verticalCenter="0" x="0" y="181"/>
+				<e:Image id="rival_avatar" width="160" height="160" source="who_png" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" mask="{rival_avatar_mask}"/>
+			</e:Group>
+			<e:Label id="rival_name" text="WHO" x="-158" y="-124" scaleX="1" scaleY="1" textColor="0x000000"/>
+			<e:layout>
+			<e:VerticalLayout gap="15" horizontalAlign="center" verticalAlign="top"/>
+			</e:layout>
+		</e:Group>
+		<e:Image width="243" height="125" source="vs_png" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group width="439" height="230.66" anchorOffsetY="0" horizontalCenter="0" top="824">
+		<e:Group id="pk_btn" width="100%" height="101" top="0" left="0">
+		<e:Image width="100%" height="100%" source="btn_bg1_png" left="0" top="0"/>
+		<e:Label text="在线匹配对战" horizontalCenter="0" verticalCenter="0" fontFamily="PingFangSC-Regular" size="34"/>
+		</e:Group>
+		<e:Group id="share_btn" width="100%" height="101" left="0" x="-156" scaleX="1" scaleY="1" bottom="0">
+		<e:Image width="100%" height="100%" left="0" top="0" source="btn_bg2_png"/>
+		<e:Label text="微信好友对战" horizontalCenter="0" verticalCenter="0" fontFamily="PingFangSC-Regular" size="34"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

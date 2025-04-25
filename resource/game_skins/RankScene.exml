@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RankSceneSkin" width="750" height="1334" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="171b05b4454" ></w:Config>
+	<e:Rect id="bg" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="bg_img" width="100%" height="100%" source="rank_bg_png" x="-1" y="-1"/>
+	<e:Image width="253" height="132" source="rank_top_png" top="46.1" left="114"/>
+	<e:Image width="137" height="149" source="jp_png" top="39.1" right="71"/>
+	<e:Group width="690" height="200" horizontalCenter="0" top="215" bottom="145">
+		<e:Rect id="list_bg" width="100%" height="100%" x="0" scaleX="1" scaleY="1" top="68" bottom="0" fillColor="0xF0FDFF" ellipseWidth="30" ellipseHeight="30" fillAlpha="1"/>
+		<e:Scroller id="rank1_view" width="100%" height="100%" scaleX="1" scaleY="1" top="68" left="0" bottom="0">
+		<e:Group width="100%" height="100%"/>
+		</e:Scroller>
+		<e:Scroller id="rank2_view" width="100%" height="100%" scaleX="1" scaleY="1" top="68" left="0" bottom="0" visible="false">
+		<e:Group width="100%" height="100%"/>
+		</e:Scroller>
+		<e:Group width="100%" height="68" top="0" left="15" right="15">
+		<e:Group id="tab1_btn" height="100%" x="6" y="-3" width="200" scrollEnabled="true">
+			<e:Rect width="99%" height="136" left="0" top="0" fillColor="0x9250F0" ellipseWidth="20" ellipseHeight="20" strokeColor="0xFFFFFF" strokeWeight="3" fillAlpha="1"/>
+			<e:Label text="近7日" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" width="100%" height="80%" left="0" bottom="0"/>
+		</e:Group>
+		<e:Group id="tab2_btn" width="200" height="100%" x="6" y="-3" scaleX="1" scaleY="1" scrollEnabled="true">
+			<e:Rect width="99%" height="136" left="0" top="0" fillColor="0xB88DF8" ellipseWidth="20" ellipseHeight="20" strokeColor="0xFFFFFF" strokeWeight="3" x="230" y="0" scaleX="1" scaleY="1"/>
+			<e:Label text="Top50" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" width="100%" height="80%" left="0" x="190.00000000000006" bottom="0"/>
+		</e:Group>
+		<e:Group width="200" height="100%" x="16" y="7" scaleX="1" scaleY="1" scrollEnabled="true" visible="false">
+			<e:Rect width="99%" height="136" left="0" top="0" fillColor="0xB88DF8" ellipseWidth="50" ellipseHeight="50" strokeColor="0xFFFFFF" strokeWeight="3" x="230" y="0" scaleX="1" scaleY="1"/>
+			<e:Label text="我的礼品" scaleX="1" scaleY="1" textAlign="center" verticalAlign="middle" width="100%" height="80%" left="0" x="189.99999999999983" bottom="0"/>
+		</e:Group>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="justify" gap="21"/>
+		</e:layout>
+		</e:Group>
+		<e:Label id="loading" text="加载中..." horizontalCenter="0" verticalCenter="0" x="287" y="535" scaleX="1" scaleY="1" textColor="0x000000" visible="false"/>
+	</e:Group>
+	<e:Group id="self_rank1_group" width="690" height="100" bottom="22" horizontalCenter="0">
+		<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" fillColor="0xF0FDFF" ellipseWidth="30" ellipseHeight="30"/>
+		<e:Group id="self_rank1" width="100%" height="100%" left="0" top="0">
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="contentJustify"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="self_rank2_group" width="690" height="100" bottom="22" horizontalCenter="0">
+		<e:Rect width="100%" height="100%" scaleX="1" scaleY="1" left="0" top="0" fillColor="0xF0FDFF" ellipseWidth="30" ellipseHeight="30"/>
+		<e:Group id="self_rank2" width="100%" height="100%" left="0" top="0">
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="contentJustify"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>
